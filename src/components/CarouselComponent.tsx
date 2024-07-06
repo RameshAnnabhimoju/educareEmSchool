@@ -1,5 +1,3 @@
-import React from "react";
-
 function CarouselComponent() {
   return <div>CarouselComponent</div>;
 }

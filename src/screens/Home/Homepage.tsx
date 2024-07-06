@@ -1,4 +1,3 @@
-// import React from "react";
 import CarouselComponent from "../../components/CarouselComponent";
 import QuickLinksComponent from "../../components/QuickLinksComponent";
 import EventsComponent from "../../components/EventsComponent";
