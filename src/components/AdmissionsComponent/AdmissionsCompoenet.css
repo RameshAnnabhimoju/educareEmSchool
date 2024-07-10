@@ -1,0 +1,49 @@
+#admissions-inner-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#admissions-container :hover {
+  cursor: pointer;
+}
+#admissions-container {
+  margin: 20px 15%;
+}
+.admissions_card_image {
+  height: 40vh;
+  width: 20vw;
+}
+.admissions_card {
+  height: 40vh;
+  width: 20vw;
+}
+.admissions_card :hover {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.admissions_card_overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.admissions_card_overlay :hover {
+  background-image: none;
+}
+.Quotation-1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px 5px;
+  color: var(--color-primary);
+}
+.subText-1 {
+  font-size: 20px;
+  margin: 10px 5px;
+}
