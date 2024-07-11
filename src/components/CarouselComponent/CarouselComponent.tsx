@@ -1,11 +1,11 @@
 import Carousel from "react-bootstrap/Carousel";
-import { school, class1, class2 } from "../../assets";
+import { class1, class2, class3 } from "../../assets";
 import "./CarouselComponent.css";
 function CarouselComponent() {
   return (
     <Carousel>
       <Carousel.Item>
-        <img src={school} alt="carouser_Image_1" className="carousel_Image" />
+        <img src={class3} alt="carouser_Image_1" className="carousel_Image" />
         <Carousel.Caption>
           <h3>Educare Em School</h3>
           <p>

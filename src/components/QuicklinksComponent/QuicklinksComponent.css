@@ -1,0 +1,22 @@
+#quicklinks-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: 30px 15%;
+}
+.quick-links-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.qick-links-text {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 15px;
+}
+.quick-links-image {
+  margin: 10px 0;
+}
+
+#quicklinks-container :hover {
+  cursor: pointer;
+}

@@ -1,0 +1,28 @@
+#campus-details-container {
+  padding: 40px 20%;
+  margin-bottom: 90px;
+  background-image: linear-gradient(
+      rgba(23, 30, 53, 0.5),
+      rgba(23, 30, 53, 0.5)
+    ),
+    url("https://littlerock.edu.in/wp-content/uploads/2022/04/DJI_0006-scaled.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-size: 20px;
+}
+#campus-details-text {
+  text-align: center;
+}
+#campus-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px;
+  gap: 30px;
+  text-align: center;
+  filter: brightness(100%);
+}
+.campus-details-item-number {
+  font-size: 40px;
+  color: yellow;
+}

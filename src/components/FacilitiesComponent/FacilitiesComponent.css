@@ -1,0 +1,35 @@
+#facilities-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0px 20%;
+}
+.facilities-card {
+  width: 550px;
+}
+.facilities-card-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.facilities-card-title {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+.facilities-card-text {
+  line-height: 32px;
+  text-align: justify;
+}
+
+.facilities-button {
+  background-color: #ffedd4;
+  color: var(--color-primary);
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.facilities-button :hover {
+  cursor: pointer;
+}

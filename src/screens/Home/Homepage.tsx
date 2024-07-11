@@ -1,20 +1,22 @@
 import CarouselComponent from "../../components/CarouselComponent/CarouselComponent";
-// import QuickLinksComponent from "../../components/QuickLinksComponent";
+import QuickLinksComponent from "../../components/QuicklinksComponent/QuickLinksComponent";
 // import EventsComponent from "../../components/EventsComponent";
 // import CircularsComponent from "../../components/CircularsComponent";
-// import AboutSchoolComponent from "../../components/AboutSchoolComponent";
-// import FacilitiesComponent from "../../components/FacilitiesComponent";
+import AboutSchoolComponent from "../../components/AboutSchoolComponent/AboutSchoolComponent";
+import FacilitiesComponent from "../../components/FacilitiesComponent/FacilitiesComponent";
 import AdmissionsComponent from "../../components/AdmissionsComponent/AdmissionsComponent";
+import CampusDetailsBannerComponent from "../../components/CampusDetailsBannerComponent/CampusDetailsBannerComponent";
 
 function Homepage() {
   return (
     <div>
       <CarouselComponent />
-      {/* <QuickLinksComponent />
-      <EventsComponent />
-      <CircularsComponent />
+      <QuickLinksComponent />
+      {/* <EventsComponent />
+      <CircularsComponent /> */}
       <AboutSchoolComponent />
-      <FacilitiesComponent /> */}
+      <CampusDetailsBannerComponent />
+      <FacilitiesComponent />
       <AdmissionsComponent />
     </div>
   );

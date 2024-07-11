@@ -1,0 +1,32 @@
+#about-school-container {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  margin: 0px 20%;
+}
+#about-school-text {
+  line-height: 30px;
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 40px;
+  color: rgb(97, 96, 96);
+}
+#about-school-card {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  height: 380px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#about-school-card-image {
+  width: 700px;
+  object-fit: cover;
+}
+#about-school-card-text {
+  line-height: 35px;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: 600;
+  padding: 15% 25px;
+  background-color: #ffedd4;
+  color: var(--color-primary);
+}
