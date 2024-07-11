@@ -2,10 +2,13 @@
   min-height: 80vh;
   display: grid;
   grid-template-columns: 4fr 3fr;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 #login-banner {
   background-color: antiquewhite;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 #login-section {
   margin: 0 150px;
