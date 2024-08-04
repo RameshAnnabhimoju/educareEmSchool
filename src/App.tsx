@@ -1,19 +1,18 @@
-import { RouterProvider } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import FooterComponent from "./components/FooterComponent/FooterComponent";
 import HeaderComponent from "./components/HeaderComponent/HeaderComponent";
 import NavbarComponent from "./components/NavbarComponent/NavbarComponent";
-import routes from "./routes/routes";
+import Routes from "./routes/Routes";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <HeaderComponent />
       <NavbarComponent />
-      <RouterProvider router={routes} />
+      <Routes />
       <FooterComponent />
-    </>
+    </BrowserRouter>
   );
 }
-
 export default App;

@@ -1,10 +1,11 @@
 import "./NavbarComponent.css";
-// import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 function NavbarComponent() {
-  // const navigate = useNavigate();
   return (
     <nav id="navbar-container">
-      <div className="navbar-item-data">Home</div>
+      <NavLink to="/" className="navbar-item-data">
+        Home
+      </NavLink>
       <div className="navbar-item">
         <div className="navbar-item-data">About</div>
         <i className="fa-regular fa-chevron-down navbar-icon" />
@@ -26,6 +27,9 @@ function NavbarComponent() {
         <i className="fa-regular fa-chevron-down navbar-icon" />
       </div>
       <div className="navbar-item-data">Contact US</div>
+      <NavLink className="navbar-item-data" to="/login">
+        Login
+      </NavLink>
       {/* <div
         className="navbar-item-data"
         onClick={() => {

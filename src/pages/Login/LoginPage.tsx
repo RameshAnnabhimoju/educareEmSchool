@@ -3,7 +3,14 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { loginBanner } from "../../assets";
 import "./LoginPage.css";
+// import { useNavigate } from "react-router-dom";
+import { login } from "../../services/authService";
 function LoginPage() {
+  // const navigate = useNavigate();
+  const LoginHandler = () => {
+    login({ data: { username: "Admin", password: "Test123$" } });
+    // navigate("login");
+  };
   return (
     <div id="login-container">
       <img src={loginBanner} alt="login-banner" id="login-banner" />
@@ -42,7 +49,12 @@ function LoginPage() {
           <br />
         </FloatingLabel>
         {/* <Form.Text className="login-error-text">sass</Form.Text> */}
-        <Button variant="danger" id="login-button" className="login-inputs">
+        <Button
+          variant="danger"
+          id="login-button"
+          className="login-inputs"
+          onClick={LoginHandler}
+        >
           Login
         </Button>
       </div>

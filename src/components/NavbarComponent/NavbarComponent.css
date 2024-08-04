@@ -13,6 +13,8 @@
 }
 .navbar-item-data {
   font-weight: bold;
+  color: white;
+  text-decoration: none;
 }
 .navbar-item-data:hover {
   cursor: pointer;
