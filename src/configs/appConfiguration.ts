@@ -5,7 +5,7 @@ const environment = {
 // change here to chage the environment to prod or dev
 const ENVIRONMENT = environment.prod;
 export const appConstants = {
-  BASE_URL: "http://43.204.233.106/server/",
+  BASE_URL: "http://localhost:8082/server/",
 };
 const setAppEnvironment = () => {
   if (ENVIRONMENT === "development") {
