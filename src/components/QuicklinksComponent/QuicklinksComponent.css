@@ -1,7 +1,7 @@
 #quicklinks-container {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  margin: 30px 15%;
+  margin: 30px 2.5%;
 }
 .quick-links-item {
   display: flex;

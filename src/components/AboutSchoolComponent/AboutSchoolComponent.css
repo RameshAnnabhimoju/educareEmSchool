@@ -1,7 +1,7 @@
 #about-school-container {
   display: grid;
   grid-template-rows: 1fr 3fr;
-  margin: 0px 20%;
+  margin: 0px 2.5%;
 }
 #about-school-text {
   line-height: 30px;
@@ -12,14 +12,17 @@
 }
 #about-school-card {
   display: grid;
-  grid-template-columns: 5fr 3fr;
+  grid-template-columns: 4fr 3fr;
   height: 380px;
   border-radius: 10px;
   overflow: hidden;
+  grid-gap: 0;
+  grid-column-gap: 0;
 }
 #about-school-card-image {
-  width: 700px;
+  width: 100%;
   object-fit: cover;
+  height: 380px;
 }
 #about-school-card-text {
   line-height: 35px;

@@ -3,7 +3,7 @@ import { class1, class2, class3 } from "../../assets";
 import "./CarouselComponent.css";
 function CarouselComponent() {
   return (
-    <Carousel>
+    <Carousel className="carousel-container">
       <Carousel.Item>
         <img src={class3} alt="carouser_Image_1" className="carousel_Image" />
         <Carousel.Caption>

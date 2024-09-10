@@ -7,11 +7,12 @@ function FooterComponent() {
         width="95%"
         height="300"
         id="footer-map"
-        style={{ border: 0 }}
+        title="footer map"
+        // style={{ border: 0 }}
         allowFullScreen={true}
         aria-hidden="false"
         tabIndex={0}
-        loading="lazy"
+        // loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       />
       <div id="footer-address">

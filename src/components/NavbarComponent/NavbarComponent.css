@@ -1,12 +1,13 @@
 #navbar-container {
   background-color: var(--color-primary);
+  position: relative;
   display: flex;
-  gap: 20px;
   align-items: center;
-  height: 50px;
-  padding: 0 20%;
-  justify-content: flex-end;
+  height: 55px;
+  padding: 0 10%;
+  justify-content: space-between;
   color: white;
+  margin:2.5px 0;
 }
 .navbar-item {
   display: flex;
@@ -28,4 +29,7 @@
   margin-left: 5px;
   position: relative;
   top: 3px;
+}
+.menu-icon{
+  display:none;
 }

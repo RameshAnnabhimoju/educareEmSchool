@@ -1,12 +1,17 @@
 #admissions-inner-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /*grid-template-columns: 1fr 1fr 1fr;*/
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  gap: 25px ;
 }
 #admissions-container :hover {
   cursor: pointer;
 }
 #admissions-container {
-  margin: 20px 15%;
+  margin: 20px 2.5%;
+  justify-content: center;
+  text-align: center;
 }
 .admissions_card_image {
   height: 40vh;

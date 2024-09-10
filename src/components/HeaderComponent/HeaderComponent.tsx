@@ -4,7 +4,7 @@ function HeaderComponent() {
   return (
     <header id="header-container">
       <div id="header-title-container">
-        <img id="header-logo" src={logo} />
+        <img alt="header logo" id="header-logo" src={logo} />
         <div id="header-title-section">
           <div id="header-title">Educare EM School</div>
           <div id="header-sub-title">(Affilliated to the CBSE, Delhi)</div>

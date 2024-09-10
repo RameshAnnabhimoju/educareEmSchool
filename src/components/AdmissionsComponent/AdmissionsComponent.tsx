@@ -57,6 +57,20 @@ function AdmissionsComponent() {
             </Card.Text>
           </Card.ImgOverlay>
         </Card>
+        <Card className="bg-white text-white admissions_card">
+          <Card.Img
+            src={kidplay2}
+            alt="Card image"
+            className="admissions_card_image"
+          />
+          <Card.ImgOverlay className="admissions_card_overlay">
+            <Card.Title>TRANSFER ADMISSIONS UKG</Card.Title>
+            <Card.Text>
+              Application forms and Prospectus will be issued with effect from
+              January 9, 2024.
+            </Card.Text>
+          </Card.ImgOverlay>
+        </Card>
       </div>
     </div>
   );

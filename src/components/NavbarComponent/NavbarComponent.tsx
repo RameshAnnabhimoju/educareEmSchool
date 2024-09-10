@@ -30,6 +30,7 @@ function NavbarComponent() {
       <NavLink className="navbar-item-data" to="/login">
         Login
       </NavLink>
+      
       {/* <div
         className="navbar-item-data"
         onClick={() => {
@@ -38,6 +39,9 @@ function NavbarComponent() {
       >
         Login
       </div> */}
+      <div className="menu-icon">
+       <i className="fa-solid  fa-bars" />
+      </div>
     </nav>
   );
 }

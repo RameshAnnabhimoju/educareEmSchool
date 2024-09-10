@@ -1,6 +1,6 @@
 #campus-details-container {
   padding: 40px 20%;
-  margin-bottom: 90px;
+  margin:0 2.5% 90px;
   background-image: linear-gradient(
       rgba(23, 30, 53, 0.5),
       rgba(23, 30, 53, 0.5)
@@ -10,6 +10,7 @@
   background-size: cover;
   color: white;
   font-size: 20px;
+  border-radius: 10px;
 }
 #campus-details-text {
   text-align: center;

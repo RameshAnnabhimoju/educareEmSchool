@@ -1,7 +1,9 @@
 #facilities-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0px 20%;
+  grid-template-columns: auto  auto;
+  justify-content: center; 
+  margin: 0px 2.5%;
+  gap: 75px;
 }
 .facilities-card {
   width: 550px;
