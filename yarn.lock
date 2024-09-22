@@ -734,7 +734,7 @@ dom-helpers@^5.0.1, dom-helpers@^5.2.0, dom-helpers@^5.2.1:
     "@popperjs/core" "^2.11.8"
     axios "^1.7.3"
     bootstrap "^5.3.3"
-    educare-web "file:../../../../Users/ARC/AppData/Local/Yarn/Cache/v6/npm-educare-web-0.0.0-46693559-2491-4a84-9819-1a1fdc81a8df-1722771982863/node_modules/educare-web"
+    educare-web "file:../../Users/SBH/AppData/Local/Yarn/Cache/v6/npm-educare-web-0.0.0-47f3480a-ecd6-43ab-94df-a10b18df5492-1726938461642/node_modules/educare-web"
     react "^18.3.1"
     react-bootstrap "^2.10.3"
     react-dom "^18.3.1"
@@ -1358,6 +1358,11 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
+
+react-multi-carousel@^2.8.5:
+  version "2.8.5"
+  resolved "https://registry.yarnpkg.com/react-multi-carousel/-/react-multi-carousel-2.8.5.tgz#033e35426ee2d2ddd46a5b3967a654cd901a80d1"
+  integrity sha512-C5DAvJkfzR2JK9YixZ3oyF9x6R4LW6nzTpIXrl9Oujxi4uqP9SzVVCjl+JLM3tSdqdjAx/oWZK3dTVBSR73Q+w==
 
 react-router-dom@^6.24.0:
   version "6.24.0"

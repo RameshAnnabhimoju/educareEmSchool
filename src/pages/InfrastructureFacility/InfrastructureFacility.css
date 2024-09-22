@@ -1,0 +1,50 @@
+.infrastructure-facility-header-text{
+    background:var(--color-banner-background) ,  url(../../assets/about-school-banner.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infrastructure-facility-header-text h1{
+    font-weight: 650;
+    font-size:5rem ;
+}
+.infrastructure-facility-WSPGallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 3% 0;
+}
+.infrastructure-facility-WSPGallery h4{
+    padding: 10px;
+}
+.infrastructure-facility-detailed-list{
+    margin: 0 2%;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+.infrastructure-facility-detailed-ul li{
+    padding-bottom: 25px;
+}
+.infrastructure-facility-carousel-container{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.151);   
+}
+
+.infrastructure-facility-carousel-image{
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+}
+

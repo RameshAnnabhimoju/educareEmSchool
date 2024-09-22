@@ -1,0 +1,31 @@
+.transportation-header-text {
+    background: var(--color-banner-background), url(../../assets/transportaion-banner.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transportation-header-text h1{
+    font-size: 5rem;
+    font-weight: 650;
+}
+.transportation-carousel-container{
+    width: 90%;
+    margin: 3% auto 1%;
+  }
+
+.transportation-carousel-image{
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+}
+.transportaion-container p{
+    margin: 0 2.5% 2.5%;
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+}
