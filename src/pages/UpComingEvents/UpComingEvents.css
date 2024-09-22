@@ -1,0 +1,23 @@
+.upcoming-events-header-text{
+    background:var(--color-banner-background),  url(../../assets/infrastructure-details-1.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upcoming-events-header-text h1{
+    font-weight: 650;
+    font-size:5rem ;
+}
+.upcoming-events-details{
+    margin: 3.5%;
+}
+.upcoming-events-details p{
+    font-size: 1.4rem;
+    padding: 10px;
+    line-height: 3rem;
+}

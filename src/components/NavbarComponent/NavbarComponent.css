@@ -7,7 +7,7 @@
   padding: 0 10%;
   justify-content: space-between;
   color: white;
-  margin:2.5px 0;
+  margin:2.5px 0 0;
 }
 .navbar-item {
   display: flex;
@@ -16,6 +16,7 @@
   font-weight: bold;
   color: white;
   text-decoration: none;
+  border: none;
 }
 .navbar-item-data:hover {
   cursor: pointer;
@@ -32,4 +33,24 @@
 }
 .menu-icon{
   display:none;
+}
+
+.dropdown-menu{
+  background-color: var(--color-primary);
+}
+.dropdown-item{
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+.dropdown-item:focus{
+  color: var(--color-secondary-bright);
+  background-color: var(--color-primary);
+}
+.dropdown-item:hover{
+  background-color: var(--color-primary) ;
+  color: var(--color-secondary-bright);
+}
+.dropdown-item:visited{
+  background-color: var(--color-primary);
 }

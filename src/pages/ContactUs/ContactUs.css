@@ -1,0 +1,26 @@
+.contact-us-container{
+    width: 100%;
+    margin: 5.5% 4.5%;
+}
+.contact-us-container h1{
+    font-size: 5.5rem;
+    margin-bottom: 30px;
+}
+.contact-us-container p{
+    font-size: 1.2rem;
+}
+.contact-us-container h3{
+    margin :2% 2%;
+    line-height: 3rem;
+    font-weight: 650;
+}
+.aboutSchool-subdetails{
+    margin: 0 2%;
+    line-height: 2rem;
+    padding: 10px 0;
+    font-weight: 600;
+}
+.aboutSchool-table{
+    width: 50%;
+    table-layout: fixed;
+}
