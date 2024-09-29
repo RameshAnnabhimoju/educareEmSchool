@@ -19,3 +19,16 @@
     line-height: 2.1rem;
     margin: 4% auto 6%;
 }
+
+@media only screen and (max-width:480px) {
+    .transfer-admission-header-text {
+        height: 50vh;
+    }
+    .transfer-admission-header-text h1{
+        font-size: 2.2rem;
+    }
+    .fee-structure-accordion{
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+}

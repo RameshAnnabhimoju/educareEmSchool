@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./MSPGallery.css";
-type imagesType = { img: string }[];
+type imagesType = {
+  text: string; img: string 
+}[];
 const MSPGallery = ({ images }: { images: imagesType }) => {
   const [slideNumber, setSlideNumber] = useState(0);
   const [openModal, setOpenModal] = useState(false);
@@ -43,17 +45,18 @@ const MSPGallery = ({ images }: { images: imagesType }) => {
           </div>
         </div>
       )}
-      <div className="galleryWarp">
+      <div className="if-galleryWarp">
         {images &&
           images.map((slide, index) => {
             return (
               <div
-                className="single"
+                className="if-single"
                 key={index}
                 onClick={() => handleOpenModal(index)}
               >
-                <img src={slide.img} alt="asdasdf" />
-                {/* <h6>{slide.text}</h6> */}
+                <img src={slide.img} alt="asdasdf" className={slide.text.length == 0 ?"IF-images":"IF-images-with-text"}/>
+                {slide.text.length > 0 ? <h6>{slide.text}</h6>
+                                    : "" } 
               </div>
             );
           })}

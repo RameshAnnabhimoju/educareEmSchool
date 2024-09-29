@@ -9,44 +9,56 @@ import MSPGallery from "./MSPGallery/MSPGallery"
 function InfrastructureFacility() {
     const galleryImages1 = [
       {
-          img : class1
+          img : class1,
+          text: ''
       },
       {
-          img : class2
+          img : class2,
+          text: ''
       },
       {
-          img : class3
+          img : class3,
+          text: ''
       },
       {
-          img : class4
+          img : class4,
+          text: ''
       },
     ]
     const galleryImages2 = [
       {
-          img : infrastructureFacilty1
+          img : infrastructureFacilty1,
+          text: ''
       },
       {
-          img : infrastructureFacilty2
+          img : infrastructureFacilty2,
+          text: ''
       },
       {
-          img : infrastructureFacilty3
+          img : infrastructureFacilty3,
+          text: ''
       },
       {
-          img : infrastructureFacilty4
+          img : infrastructureFacilty4,
+          text: ''
       },
       ]
     const galleryImages3 = [
       {
-          img : class3
+          img : class3,
+          text: ''
       },
       {
-          img : class6
+          img : class6,
+          text: ''
       },
       {
-          img : class4
+          img : class4,
+          text: ''
       },
       {
-          img : class5
+          img : class5,
+          text: ''
       },
     ]
   const galleryImagesText = [
@@ -120,13 +132,13 @@ function InfrastructureFacility() {
           <li>Solar Power</li>
         </ul>
       </div>
-      <Carousel className="transportation-carousel-container" responsive={responsive} >
-      <img src={class1} alt="carouser_Image_1" className="transportation-carousel-image" />
-      <img src={class2} alt="carouser_Image_1" className="transportation-carousel-image" />
-      <img src={class3} alt="carouser_Image_1" className="transportation-carousel-image" />
-      <img src={class4} alt="carouser_Image_1" className="transportation-carousel-image" />
-      <img src={class5} alt="carouser_Image_1" className="transportation-carousel-image" />
-      <img src={class6} alt="carouser_Image_1" className="transportation-carousel-image" />
+      <Carousel className="infrastructure-facility-carousel-container" responsive={responsive} >
+      <img src={class1} alt="carouser_Image_1" className="infrastructure-facility-carousel-image" />
+      <img src={class2} alt="carouser_Image_1" className="infrastructure-facility-carousel-image" />
+      <img src={class3} alt="carouser_Image_1" className="infrastructure-facility-carousel-image" />
+      <img src={class4} alt="carouser_Image_1" className="infrastructure-facility-carousel-image" />
+      <img src={class5} alt="carouser_Image_1" className="infrastructure-facility-carousel-image" />
+      <img src={class6} alt="carouser_Image_1" className="infrastructure-facility-carousel-image" />
      </Carousel>;
     </div>
   )

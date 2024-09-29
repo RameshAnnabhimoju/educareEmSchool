@@ -1,22 +1,44 @@
 #quicklinks-container {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(6, auto);
   margin: 30px 2.5%;
+
 }
 .quick-links-item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.qick-links-text {
+.quick-links-text {
   color: var(--color-primary);
   font-weight: 700;
   font-size: 15px;
+  text-align: center;
 }
 .quick-links-image {
   margin: 10px 0;
 }
-
+.quick-links-item:hover{
+  transform: scale(1.02) ;
+}
 #quicklinks-container :hover {
   cursor: pointer;
+}
+@media only screen  and (max-width:900px){
+  .quick-links-item{
+    grid-template-columns: repeat(7, .5fr);
+  }
+  .quick-links-text{
+    font-size: 10px;
+  }
+
+}
+
+@media only screen and (max-width:480px) {
+  .quick-links-image{
+    height: 25px;
+  }
+  .quick-links-text{
+    font-size: 5px;
+  }
 }

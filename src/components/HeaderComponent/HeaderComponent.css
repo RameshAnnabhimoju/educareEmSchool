@@ -1,21 +1,27 @@
+
 #header-container {
-  min-height: 100px;
-  padding: 0 2.5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 8px 2.5%;
+
 }
+
 #header-title-container {
   display: flex;
+  align-items: center;
 }
+
 #header-logo {
-  width: 100px;
-  height: 100px;
+  width: 50px; /* Set a fixed width for the logo */
+  margin-right: 10px;
 }
+
 #header-title-section {
-  margin-left: 20px;
- 
+  display: flex;
+  flex-direction: column;
 }
+
 #header-title {
   font-size: 35px;
   color: var(--color-primary-bright);
@@ -24,19 +30,129 @@
   font-size: 19px;
   font-weight: bold;
 }
+
 #header-address {
   font-size: 15px;
   font-weight: bold;
   color: gray;
 }
-.header-icon {
-  margin: 0 10px;
-  color: var(--color-primary);
-}
 #header-right-section {
   display: flex;
+  align-items: center;
 }
+.header-icon {
+  margin: 0 15px 0 0;
+  color: var(--color-primary);
+}
+
 #header-contacts {
   color: var(--color-primary);
   font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Large Screen Desktop */
+@media only screen and (min-width: 1025px) {
+
+  #header-title {
+    font-size: 35px;
+  }
+  #header-sub-title {
+    font-size: 19px;
+  }
+  #header-address {
+    font-size: 15px;
+  }
+  #header-logo{
+    width: 100px;
+  }
+  .header-icon {
+    margin: 0  15px 0 0;
+  }
+
+}
+
+
+/* laptops and few tablets  */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #header-container {
+    padding: 10px;
+justify-content: center;
+  }
+  #header-logo{
+    width: 50px;
+  }
+  #header-title {
+    font-size: 20px;
+  }
+  #header-sub-title {
+    font-size: 16px;
+  }
+  #header-address {
+    font-size: 12px;
+  }
+  .header-icon {
+    margin: 0 10px 0 0;
+    font-size: 12px;
+  }
+  #header-contacts {
+    font-size: 14px;
+}
+}
+
+/* Tablet  */
+@media only screen and (min-width: 427px) and (max-width: 768px) {
+  #header-container {
+    padding: 10px;
+  }
+  #header-logo{
+    width: 50px;
+  }
+  #header-title {
+    font-size: 14px;
+  }
+  #header-sub-title {
+    font-size: 12px;
+  }
+  #header-address {
+    font-size: 8px;
+  }
+  .header-icon {
+    margin: 0 5px 0 0;
+    font-size: 12px;
+  }
+  #header-contacts {
+    font-size: 12px;
+}
+}
+/* Mobile (<= 480px) */
+@media only screen and (max-width: 426px) {
+
+  #header-logo{
+    width: 40px;
+  }
+  #header-title {
+    font-size: 10px;
+  }
+  #header-sub-title {
+    font-size: 8px;
+  }
+  #header-address {
+    font-size: 5px;
+    width: 100px;
+  }
+  .header-icon {
+    margin: 0 3px 0 0;
+    font-size: 8px;
+  }
+  #header-contacts {
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: 320px){
+  
+  #header-right-section{
+    margin: 0 8px 0 0;
+  }
 }

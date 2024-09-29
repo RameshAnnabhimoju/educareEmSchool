@@ -22,14 +22,19 @@ function Achievements()  {
         <hr />
         <div className="sub-certificates-container">
           <div className="sub-certificate-type-right">
-            <p>Educare EM School has been ranked as one of the top 10 schools in the country</p>
-            <img src={achievements2} alt="Sub Certificate"/>
+            <div>
+              <p>Educare EM School has been ranked as one of the top 10 schools in the country</p>
+            </div>
+            <div>
+              <img src={achievements2} alt="Sub Certificate"/>
+            </div>
           </div>
          
           <hr />
           <div className="sub-certificate-type-left">
-            <img src={achievements4} alt="Sub Certificate"/>
-            <p>Educare EM School has been ranked as one of the top 10 schools in the country</p>
+            <div><img src={achievements4} alt="Sub Certificate"/></div>
+            <div>
+            <p>Educare EM School has been ranked as one of the top 10 schools in the country</p></div>
           </div>
           <hr />
           <div className="sub-certificate-type-right">

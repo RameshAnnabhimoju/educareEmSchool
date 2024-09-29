@@ -1,10 +1,20 @@
-.contact-us-container{
+.contact-us-header-text{
+    background: var(--color-banner-background), url(../../assets/school.jpg) center  no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
     width: 100%;
-    margin: 5.5% 4.5%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.contact-us-container h1{
-    font-size: 5.5rem;
-    margin-bottom: 30px;
+.contact-us-header-text h1{
+    font-weight: 650;
+    font-size: 5rem;
+}
+#contact-us-details{
+    margin: 5.5% 4.5%;
 }
 .contact-us-container p{
     font-size: 1.2rem;
@@ -14,13 +24,30 @@
     line-height: 3rem;
     font-weight: 650;
 }
-.aboutSchool-subdetails{
+.contact-us-subdetails{
     margin: 0 2%;
     line-height: 2rem;
     padding: 10px 0;
     font-weight: 600;
 }
-.aboutSchool-table{
-    width: 50%;
+.contact-us-table{
+    margin: 0 auto;
+    width: 90%;
     table-layout: fixed;
+}
+@media only screen and (max-width:440px){
+    .contact-us-header-text{
+        height: 50vh;
+    }
+    .contact-us-header-text h1{
+        font-size: 3.5rem;
+    }
+
+    .contact-us-container p{
+        font-size: 1rem;
+    }
+    .contact-us-container h3{
+        line-height: 2rem;
+        
+    }
 }

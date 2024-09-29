@@ -1,97 +1,99 @@
 import "./NavbarComponent.css";
-import { NavLink } from "react-router-dom";
-import Dropdown from 'react-bootstrap/Dropdown';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Dropdown from "react-bootstrap/esm/Dropdown";
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
 function NavbarComponent() {
+  const About = () => {
+    return <span className="navbar-item-span-data">About</span>;
+  };
+  const Facilities = () => {
+    return <span className="navbar-item-span-data">Facilites</span>;
+  };
+  const Admissions = () => {
+    return <span className="navbar-item-span-data">Admissions</span>;
+  };
+  const Circulars = () => {
+    return <span className="navbar-item-span-data">Circulars</span>;
+  };
+
   return (
-    <nav id="navbar-container">
-      <NavLink to="/" className="navbar-item-data">
-        Home
-      </NavLink>
-
-      <Dropdown id="drop-down" autoClose="outside">
-        <Dropdown.Toggle variant="" className="navbar-item-data">
-           About
-        </Dropdown.Toggle>
-        <Dropdown.Menu className="dropdown-menu">
-          <Dropdown.Item href="#/action-1" >
-              <NavLink to="/management" className="dropdown-item">Management</NavLink>
-          </Dropdown.Item>
-          <Dropdown.Item href="#/action-2" >
-              <NavLink to="/achievements" className="dropdown-item">Achievements</NavLink>
-          </Dropdown.Item>
-          <Dropdown.Item href="#/action-3" >
-              <NavLink to="/infrastructureDetails" className="dropdown-item">Infrastructure Details</NavLink>
-          </Dropdown.Item>
-          <Dropdown.Item href="#/action-4" >
-              <NavLink to="/aboutSchool" className="dropdown-item">About School</NavLink>
-          </Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
-
-      <Dropdown id="drop-down" autoClose="outside">
-        <Dropdown.Toggle variant="" className="navbar-item-data">
-            Facilities
-        </Dropdown.Toggle>
-        <Dropdown.Menu className="dropdown-menu">
-          <Dropdown.Item href="#/action-1" >
-              <NavLink to="/infrastructureFacility" className="dropdown-item">Infrastructure</NavLink>
-          </Dropdown.Item>
-          <Dropdown.Item href="#/action-2" >
-              <NavLink to="/transportation" className="dropdown-item">Transportation</NavLink>
-          </Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
-
-      <Dropdown id="drop-down" autoClose="outside">
-        <Dropdown.Toggle variant="" className="navbar-item-data">
-            Admissions
-        </Dropdown.Toggle>
-        <Dropdown.Menu className="dropdown-menu">
-          <Dropdown.Item href="#/action-1" >
-              <NavLink to="/admissionProcess" className="dropdown-item">Admission Process</NavLink>
-          </Dropdown.Item>
-          <Dropdown.Item href="#/action-2" >
-              <NavLink to="/feeStructure" className="dropdown-item">Fee Structure</NavLink>
-          </Dropdown.Item>
-          <Dropdown.Item href="#/action-3" >
-              <NavLink to="/transferAdmission" className="dropdown-item">Transfer Admission</NavLink>
-          </Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
-
-      <Dropdown id="drop-down" autoClose="outside">
-        <Dropdown.Toggle variant="" className="navbar-item-data">
-        Circulars
-        </Dropdown.Toggle>
-        <Dropdown.Menu className="dropdown-menu">
-          <Dropdown.Item href="#/action-1" >
-              <NavLink to="/upComingEvents" className="dropdown-item">Upcoming Events</NavLink>
-          </Dropdown.Item>
-          <Dropdown.Item href="#/action-2" >
-              <NavLink to="/concludedEvents" className="dropdown-item">Concluded Events</NavLink>
-          </Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>  
-
-      <NavLink to="/contactUS" className="navbar-item-data">
-      Contact Us
-      </NavLink>
+    <nav id="navbar-container" >
+      <Navbar collapseOnSelect  variant="dark"  expand="lg" >
+        <Container fluid >
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" className="navbar-toggle ms-auto "/>
+          <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center">
+          <Nav  className="fw-bold" id="navitems-container"  >
+            <Nav.Link href="/" className="navbar-item-data"  >
+             <div  className="navbar-item-data">
+                Home
+              </div> 
+            </Nav.Link>
+            <hr />
+            <NavDropdown title={<About />}  className="navbar-item-data">
+              <Dropdown.Item href="/management">
+                <div  className="dropdown-item">Management</div>
+              </Dropdown.Item>
+              <Dropdown.Item href="/achievements">
+                <div  className="dropdown-item">Achievements</div>
+              </Dropdown.Item>
+              <Dropdown.Item href="/infrastructureDetails">
+                <div className="dropdown-item">Infrastructure Details</div>
+              </Dropdown.Item>
+              <Dropdown.Item href="/aboutSchool">
+              <div  className="dropdown-item">About School</div>
+              </Dropdown.Item>
+            </NavDropdown>            
+            <hr />
+            <NavDropdown title={<Facilities />} className="navbar-item-data">
+              <Dropdown.Item href="/infrastructureFacility">
+                <div className="dropdown-item">Infrastructure</div>
+              </Dropdown.Item>
+              <Dropdown.Item href="/transportation">
+                <div className="dropdown-item">Transportation</div>
+              </Dropdown.Item>
+            </NavDropdown>
+            <hr />
+            <NavDropdown title={<Admissions />} className="navbar-item-data">
+              <Dropdown.Item href="/admissionProcess">
+                <div className="dropdown-item">Admission Process</div>
+              </Dropdown.Item>
+              <Dropdown.Item href="/feeStructure">
+                <div className="dropdown-item">Fee Structure</div>
+              </Dropdown.Item>
+              <Dropdown.Item href="/transferAdmission">
+                <div className="dropdown-item">Transfer Admission</div>
+              </Dropdown.Item>
+            </NavDropdown>
+            <hr />
+            <NavDropdown title={<Circulars />}className="navbar-item-data">
+              <Dropdown.Item href="/upComingEvents">
+                <div className="dropdown-item">Upcoming Events</div>
+              </Dropdown.Item>
+              <Dropdown.Item href="/concludedEvents">
+                <div className="dropdown-item">Concluded Events</div>
+              </Dropdown.Item>
+            </NavDropdown>
+            <hr />
+            <Nav.Link href="/contactUS" className="navbar-item-data"> 
+              <div className="navbar-item-data">
+              Contact Us
+              </div>
+            </Nav.Link>
+            <hr />
+            <Nav.Link href="/login" className="navbar-item-data">
+              <div className="navbar-item-data" >
+                Login
+              </div>
+            </Nav.Link>
+            <hr />
+          </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
       
-      <NavLink className="navbar-item-data" to="/login">
-        Login
-      </NavLink>
-      
-      {/* <div
-        className="navbar-item-data"
-        onClick={() => {
-          navigate("/login");
-        }}
-      >
-        Login
-      </div> */}
-      <div className="menu-icon">
-       <i className="fa-solid  fa-bars" />
-      </div>
     </nav>
   );
 }

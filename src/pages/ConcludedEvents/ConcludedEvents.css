@@ -27,3 +27,21 @@
     margin-bottom: 3%;
 }
 
+@media only screen and (max-width:480px){
+    .concluded-events-header-text{
+        height: 50vh;
+    }
+    .concluded-events-header-text h1{
+        font-size: 2.3rem;
+    }
+    .concluded-events-container h2{
+        font-size: 1.5rem;
+    }
+    .infrastructure-facility-detailed-ul li{
+        font-size: 1rem;
+        padding-bottom: 5px;
+    }
+    .infrastructure-facility-carousel-image{
+        width: 300px;
+    }
+}

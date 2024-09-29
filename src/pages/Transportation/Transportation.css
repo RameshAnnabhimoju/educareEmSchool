@@ -15,17 +15,34 @@
     font-weight: 650;
 }
 .transportation-carousel-container{
-    width: 90%;
+    width: 95%;
     margin: 3% auto 1%;
   }
 
 .transportation-carousel-image{
-    height: 200px;
-    width: 350px;
+    height: 175px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
     border-radius: 10px;
+    object-fit: cover;
 }
 .transportaion-container p{
     margin: 0 2.5% 2.5%;
     font-size: 1.15rem;
     line-height: 1.5rem;
+}
+
+@media only screen and (max-width:480px) {
+    .transportation-header-text {
+        height: 50vh;
+    }
+    .transportation-header-text h1{
+        font-size: 2.5rem;
+    }
+    .transportaion-container p{
+        font-size: 0.9rem;
+
+    }
 }

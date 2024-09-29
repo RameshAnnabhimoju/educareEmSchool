@@ -14,7 +14,7 @@ function AboutSchoolComponent() {
         skill, culture and knowledge.
       </div>
       <div id="about-school-card">
-        <img src={school} alt="" id="about-school-card-image" />
+        <div><img src={school} alt="" id="about-school-card-image" /></div>
         <div id="about-school-card-text">
           To quote the words of the Founder, “This campus and everything that
           you see here is the gift of God. We are mere instruments in His

@@ -1,26 +1,43 @@
-#admissions-inner-container {
-  display: grid;
-  /*grid-template-columns: 1fr 1fr 1fr;*/
-  grid-template-columns: repeat(4, auto);
-  justify-content: center;
-  gap: 25px ;
-}
-#admissions-container :hover {
-  cursor: pointer;
-}
+
 #admissions-container {
-  margin: 20px 2.5%;
+  margin: 20px auto;
   justify-content: center;
   text-align: center;
 }
-.admissions_card_image {
-  height: 40vh;
-  width: 20vw;
+.Quotation-1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px 5px;
+  color: var(--color-primary);
+}
+.subText-1 {
+  font-size: 20px;
+  margin: 10px 5px;
+}
+#admissions-inner-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
 }
 .admissions_card {
-  height: 40vh;
-  width: 20vw;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  max-width: 600px;
+  max-height: 300px;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 50vh;
 }
+.admissions_card_image {
+  border-bottom: 1px solid #ddd;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 .admissions_card :hover {
   background-image: linear-gradient(
     to bottom,
@@ -39,16 +56,25 @@
     rgba(0, 0, 0, 0.8) 100%
   );
 }
-.admissions_card_overlay :hover {
+.admissions_card_overlay :hover{
   background-image: none;
 }
-.Quotation-1 {
-  font-size: 40px;
-  font-weight: bold;
-  margin: 10px 5px;
-  color: var(--color-primary);
-}
-.subText-1 {
-  font-size: 20px;
-  margin: 10px 5px;
+
+@media only screen and (max-width:440px) {
+  .Quotation-1{
+    font-size: 30px;
+  }
+  .subText-1{
+    font-size: 18px;
+  }
+  #admissions-inner-container{
+    flex-wrap: wrap;
+  }
+  .admissions_card{
+    margin:10px
+  }
+  .admissions_card_overlay {
+    font-size: 15px;
+  }
+
 }
