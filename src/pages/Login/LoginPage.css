@@ -9,39 +9,93 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-#login-section {
-  margin: 0 150px;
-}
-#login-button {
-  width: 100%;
-  margin: 20px 0;
-}
-#login-section-title {
-  text-align: center;
-  font-weight: bold;
-  font-size: 30px;
-  color: var(--color-primary-bright);
-  margin: 50px;
-}
-.login-error-text {
-  color: var(--color-primary-bright);
-}
-#login-eye {
-  position: relative;
-  color: var(--color-primary-bright);
-  transform: scale(1.6);
-  left: -35px;
-}
-#login-eye:hover {
-  cursor: pointer;
-  color: var(--color-primary-dark);
-  /* opacity: 0.9; */
-}
-#login-banner {
-  max-height: 750px;
-}
-.login-inputs {
-  max-width: 400px;
-  width: 400px;
-}
+} 
+  #login-section {
+    max-width: 300px; 
+    margin: auto auto; 
+    padding: 20px;
+  }
+  
+  #login-section-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--color-primary-bright);
+    text-align: center;
+  }
+  .login-error-text {
+    color: var(--color-primary-bright);
+  }
+  
+  .login-inputs {
+    width: 100%; 
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #login-eye {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--color-primary-bright);
+  }
+  #login-button {
+    width: 100%; 
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #login-eye:hover {
+    cursor: pointer;
+    color: var(--color-primary-dark);
+  
+  }
+  
+  
+  @media (max-width: 768px) {
+    #login-section {
+      max-width: 250px;
+    }
+    .login-inputs {
+      font-size: 16px;
+    }
+    #login-button {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #login-banner{
+      display: none;
+    }
+    #login-container{
+      grid-template-columns: auto;
+      background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url(../../assets/logo.jpg) no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+    }
+    #login-section {
+      border: 1px solid rgb(145, 109, 109);
+      border-radius: 10px;
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+    }
+    #login-section-title{
+      font-size: 20px;
+      color: var(--color-primary-bright);
+    }
+    .login-inputs {
+      font-size: 14px;
+    }
+    #login-button {
+      font-size: 14px;
+    }
+  }

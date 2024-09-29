@@ -12,7 +12,6 @@
 }
 .management-header-text h1{
     font-size: 4rem;
-    width: 75%;
     margin-left: 40px;
 }
 .management-header-text p{
@@ -34,4 +33,24 @@
 .management-details-ul  li{
     padding-bottom: 25px;
     list-style-type: none;
+}
+
+@media only screen and (max-width:480px){
+    .management-header-text{
+        height: 50vh;
+    }
+    .management-header-text h1{
+        font-size: 2rem;
+    }
+    .management-header-text p{
+        font-size: .7rem;
+    }
+    .management-details-intro{
+        margin: 10px ;
+        font-size: 1rem;
+    }
+    .management-details-list{
+        margin: 0 ;
+        font-size: 1rem;
+    }
 }

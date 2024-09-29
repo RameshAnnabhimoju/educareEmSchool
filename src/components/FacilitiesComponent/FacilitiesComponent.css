@@ -1,4 +1,4 @@
-#facilities-container {
+/* #facilities-container {
   display: grid;
   grid-template-columns: auto  auto;
   justify-content: center; 
@@ -24,6 +24,40 @@
   text-align: justify;
 }
 
+
+.facilities-button :hover {
+  cursor: pointer;
+} */
+
+#facilities-container{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+.facilities-card{
+  background-color: white;
+  margin: 20px;
+  width: 600px;
+  overflow: hidden;
+  width: 100%;
+}
+.facilities-card-image{
+  border-bottom: 1px solid #ddd;
+  border-radius: 10px;
+  width: 100%;
+}
+.facilities-card-text{
+  padding: 0 10px;
+  text-align: start;
+}
+.facilities-card-title{
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px 0;
+  margin-left: 10px ;
+}
 .facilities-button {
   background-color: #ffedd4;
   color: var(--color-primary);
@@ -31,7 +65,14 @@
   padding: 10px 20px;
   border-radius: 10px;
   font-weight: bold;
+  margin: 0 10px 0;
 }
-.facilities-button :hover {
-  cursor: pointer;
+
+@media only screen and (max-width:440px) {
+  #facilities-container{
+    flex-wrap: wrap;
+  }
+  .facilities-card{
+    margin:10px
+  }
 }

@@ -43,3 +43,17 @@
     line-height: 1.6rem;
     font-size: 1.05rem;
 }
+@media only screen and (max-width:480px) {
+    .admission-process-header-text {
+        height: 50vh;
+    }
+    .admission-process-header-text h1{
+        font-size: 2.2rem;
+    }
+    .admission-process-details h1{
+        font-size: 2rem;
+    }
+    .admission-process-details h2{
+        font-size: 1.5rem;
+    }
+}

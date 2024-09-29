@@ -1,3 +1,6 @@
+.about-class-container{
+    width: 100%;
+}
 .about-school-header-text{
     background: var(--color-banner-background), url(../../assets/about-school-banner.jpg) center no-repeat;
     background-size: cover;
@@ -19,32 +22,83 @@
 }
 .about-school-content-container{
     display: flex;
-    justify-content: space-between;
-
+    justify-content: center;
+    gap: 20px;
 }
-.about-school-image-content , .about-school-text-content{
-    width: 49%;
-    padding: 20px;
-    margin: 0 auto;
+.about-school-text-content{
+    margin: 0 ;
+    width: 450px;
+}
+.about-school-image-content {
+    width: 450px;
+    margin: 0 ;
 }
 .about-school-text-content p{
     font-size: 1.2rem;
 }
 .aboutschool-images{
-    display: block;
-    margin: 0 auto 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom:30px;
     height: 250px;
     width: 400px;
     border-radius: 10px;
     object-fit: cover;
-    left: 100;
 }
 .about-school-carousel-container{
     width: 90%;
-    margin: 3% auto 1%;
+    margin: 2% auto 1%;
 }
 .about-school-carousel-image{
-    height: 200px;
-    width: 350px;
+    height: 175px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
     border-radius: 10px;
+    object-fit: cover;
+}
+
+
+@media only screen and (min-width:1024px){
+    .about-school-content-container{
+        gap: 60px;
+    }
+    .about-school-image-content, .aboutschool-images{
+        width: 450px;
+    }
+}
+@media only screen and (max-width:790px){
+    .about-school-image-content, .aboutschool-images{
+        width: 300px;
+    }
+    .about-school-text-content p{
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width:480px){
+
+    .about-school-header-text{
+        height: 50vh;
+    }
+    .about-school-header-text h1{
+        font-size: 2.5rem;
+    }
+    .about-class-container h1{
+        font-size: 2rem;
+    }
+    .about-school-content-container{
+        flex-wrap: wrap;
+    }
+    .about-school-image-content, .aboutschool-images{
+        width: 300px;
+    }
+    .about-school-text-content p{
+        font-size: .8rem;
+        padding: 10px;
+    }
+    .about-school-carousel-image{
+        width: 275px;
+    }
 }

@@ -1,10 +1,29 @@
 #footer-container {
   background-color: var(--color-primary);
-  color: white;
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  padding: 50px 30px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
+#footer-map{
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  max-width: 650px;
+  max-height: 300px;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+}
+#footer-address , #footer-admissions{
+  color: white;
+  margin: 10px;
+  max-width: 300px;
+  max-height: 375px;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+}
+
 #footer-address-title,
 #footer-admissions-title {
   font-weight: bold;
@@ -12,8 +31,36 @@
 }
 #footer-address-value {
   margin: 45px 0;
-  max-width: 350px;
+
 }
 #footer-admissions-phone {
   margin: 45px 0;
+}
+
+@media only screen and (max-width:769px) {
+  #footer-container{
+    flex-wrap: wrap;
+  }
+  #footer-address-title,
+  #footer-admissions-title{
+  font-size: 20px;
+}
+  #footer-address-value, #footer-address-timings,
+  #footer-admissions-phone, #footer-admissions-mail{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width:440px) {
+  #footer-container{
+    flex-wrap: wrap;
+  }
+  #footer-address-title,
+#footer-admissions-title{
+  font-size: 15px;
+}
+  #footer-address-value, #footer-address-timings,
+  #footer-admissions-phone, #footer-admissions-mail{
+    font-size: 10px;
+  }
 }

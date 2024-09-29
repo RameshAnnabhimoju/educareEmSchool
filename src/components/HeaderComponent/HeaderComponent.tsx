@@ -20,7 +20,10 @@ function HeaderComponent() {
         <i className="fa-brands fa-square-instagram header-icon" />
         <i className="fa-brands fa-square-facebook header-icon" />
         <i className="fa-solid fa-phone header-icon" />
-        <div id="header-contacts">9999999999, 8888888888</div>
+        <div id="header-contacts">
+          9999999999,
+          <br /> 8888888888
+        </div>
       </div>
     </header>
   );
