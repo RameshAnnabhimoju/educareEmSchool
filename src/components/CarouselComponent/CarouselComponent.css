@@ -7,9 +7,9 @@
   height: 90vh;
   border-radius: 10px;
 }
-@media only screen and (max-width:440px){
+@media only screen and (max-width:480px){
   .carousel_Image{
-    height: 50vh;
+    height: 30vh;
   }
   .carousel-container h3{
     font-size: 1.3rem;
@@ -19,4 +19,10 @@
     font-size: 10px ;
   }
   
+}
+
+@media only screen and (max-width:780px){
+  .carousel_Image{
+    height: 50vh;
+  }
 }
