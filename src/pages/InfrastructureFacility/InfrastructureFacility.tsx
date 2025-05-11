@@ -28,29 +28,37 @@ function InfrastructureFacility() {
   const galleryImages1 = [
     {
       img: class1,
+      text: "Classroom 1",
     },
     {
       img: class2,
+      text: "Classroom 2",
     },
     {
       img: class3,
+      text: "Classroom 3",
     },
     {
       img: class4,
+      text: "Classroom 4",
     },
   ];
   const galleryImages2 = [
     {
       img: schoolImage1,
+      text: "School Image 1",
     },
     {
       img: schoolImage2,
+      text: "School Image 2",
     },
     {
       img: schoolImage3,
+      text: "School Image 3",
     },
     {
       img: schoolImage4,
+      text: "School Image 4",
     },
   ];
   // const galleryImages3 = [
@@ -70,15 +78,19 @@ function InfrastructureFacility() {
   const galleryImagesText = [
     {
       img: schoolImage5,
+      text: "School Image 5",
     },
     {
       img: schoolImage6,
+      text: "School Image 6",
     },
     {
       img: schoolImage2,
+      text: "School Image 2",
     },
     {
       img: schoolImage1,
+      text: "School Image 1",
     },
   ];
 

@@ -53,8 +53,7 @@ function LoginPage() {
           variant="danger"
           id="login-button"
           className="login-inputs"
-          onClick={LoginHandler}
-        >
+          onClick={LoginHandler}  >
           Login
         </Button>
       </div>

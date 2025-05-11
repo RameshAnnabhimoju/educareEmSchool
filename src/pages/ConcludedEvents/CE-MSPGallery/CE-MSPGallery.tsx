@@ -53,7 +53,6 @@ const MSPGallery = ({ images }: { images: imagesType }) => {
                 onClick={() => handleOpenModal(index)}
               >
                 <img src={slide.img} alt="asdasdf" />
-                {/* <h6>{slide.text}</h6> */}
               </div>
             );
           })}

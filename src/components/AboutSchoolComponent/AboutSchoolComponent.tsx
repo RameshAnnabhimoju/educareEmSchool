@@ -12,7 +12,9 @@ function AboutSchoolComponent() {
         and grow into responsible global citizens.
       </div>
       <div id="about-school-card">
-        <img src={school} alt="" id="about-school-card-image" />
+        <div>
+          <img src={school} alt="" id="about-school-card-image" />
+        </div>
         <div id="about-school-card-text">
           To quote the words of the Founder, “At Educare Global School, we
           believe in fostering curiosity, creativity, and leadership, shaping

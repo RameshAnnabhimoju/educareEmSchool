@@ -21,3 +21,15 @@
     padding: 10px;
     line-height: 3rem;
 }
+@media only screen and (max-width:480px) {
+    .upcoming-events-header-text {
+        height: 50vh;
+    }
+    .upcoming-events-header-text h1{
+        font-size: 2.2rem;
+    }
+    .upcoming-events-details p{
+        font-size: 1rem;
+
+    }
+}
