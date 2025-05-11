@@ -1,7 +1,7 @@
 #about-school-container {
   display: grid;
   grid-template-rows: 1fr 3fr;
-  margin: 0px 2.5%;
+  margin: 0 10% 100px 10%;
 }
 #about-school-text {
   line-height: 30px;
@@ -29,7 +29,7 @@
   font-size: 15px;
   text-align: justify;
   font-weight: 600;
-  padding: 15% 25px;
+  padding: 8% 25px;
   background-color: #ffedd4;
   color: var(--color-primary);
 }

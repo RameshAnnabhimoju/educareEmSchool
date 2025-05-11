@@ -1,5 +1,5 @@
 import axios from "axios";
-import { appConfiguration } from "./appConfiguration";
+import { appConfiguration } from "./AppConfiguration";
 
 const headers = {
   "Access-Control-Allow-Origin": "*",

@@ -5,23 +5,27 @@ function AboutSchoolComponent() {
     <div id="about-school-container">
       <div id="about-school-text">
         <strong> Educare EM School</strong>, a leading Educational Institution
-        in the region was founded by Late Dr C.T. Abraham, who had extensive
-        experience in the field of education in India and the USA. The natural
-        aura of the beautiful serene, green campus blended with its passion to
-        provide the best for the students to learn and explore has truly created
-        a powerful atmosphere for everyone to nurture their skills and excel.
-        LRIS shapes professionals who are an optimum mix of right attitude,
-        skill, culture and knowledge.
+        in the region was founded by K. Murarii is a premier educational
+        institution committed to delivering high-quality education and holistic
+        development. With a strong foundation in academic excellence, our school
+        provides a nurturing environment where students can explore, innovate,
+        and grow into responsible global citizens.
       </div>
       <div id="about-school-card">
         <img src={school} alt="" id="about-school-card-image" />
         <div id="about-school-card-text">
-          To quote the words of the Founder, “This campus and everything that
-          you see here is the gift of God. We are mere instruments in His
-          hands.” <strong> Educare EM School </strong> strives to provide the
-          best possible facilities to its students, including a highly qualified
+          To quote the words of the Founder, “At Educare Global School, we
+          believe in fostering curiosity, creativity, and leadership, shaping
+          the future one student at a time.”{" "}
+          <strong> Educare EM School </strong> strives to provide the best
+          possible facilities to its students, including a highly qualified
           teaching faculty, with the ultimate aim of providing an education of
-          the highest order.
+          the highest order. Nestled in a serene and green campus, our
+          institution blends modern education with core values, ensuring
+          students receive a balanced and enriching learning experience. Our
+          passionate educators and well-structured curriculum empower young
+          minds with the right attitude, skills, and knowledge to excel in an
+          ever-evolving world.
         </div>
       </div>
     </div>
