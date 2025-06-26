@@ -4,12 +4,12 @@ function AboutSchoolComponent() {
   return (
     <div id="about-school-container">
       <div id="about-school-text">
-        <strong> Educare EM School</strong>, a leading Educational Institution
-        in the region was founded by K. Murarii is a premier educational
-        institution committed to delivering high-quality education and holistic
-        development. With a strong foundation in academic excellence, our school
-        provides a nurturing environment where students can explore, innovate,
-        and grow into responsible global citizens.
+        <strong> Educare Global School</strong>, a leading Educational
+        Institution in the region was founded by K. Murarii is a premier
+        educational institution committed to delivering high-quality education
+        and holistic development. With a strong foundation in academic
+        excellence, our school provides a nurturing environment where students
+        can explore, innovate, and grow into responsible global citizens.
       </div>
       <div id="about-school-card">
         <div>
@@ -19,7 +19,7 @@ function AboutSchoolComponent() {
           To quote the words of the Founder, “At Educare Global School, we
           believe in fostering curiosity, creativity, and leadership, shaping
           the future one student at a time.”{" "}
-          <strong> Educare EM School </strong> strives to provide the best
+          <strong> Educare Global School </strong> strives to provide the best
           possible facilities to its students, including a highly qualified
           teaching faculty, with the ultimate aim of providing an education of
           the highest order. Nestled in a serene and green campus, our

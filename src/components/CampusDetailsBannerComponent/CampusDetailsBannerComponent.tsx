@@ -3,8 +3,8 @@ const CampusDetailsBannerComponent = () => {
   return (
     <div id="campus-details-container">
       <div id="campus-details-text">
-        Educare EM School is known for its unique, green infrastructure and has
-        made a name for itself as one of the outstanding Educational
+        Educare Global School is known for its unique, green infrastructure and
+        has made a name for itself as one of the outstanding Educational
         Institutions in the Andhra Pradesh State.
       </div>
       <div id="campus-details">

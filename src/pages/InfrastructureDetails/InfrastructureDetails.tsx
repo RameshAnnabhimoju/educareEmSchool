@@ -1,52 +1,85 @@
 import Carousel from "react-multi-carousel";
-import {infrastrucutreDetails1, infrastrucutreDetails2, infrastrucutreDetails3, infrastrucutreDetails4, infrastrucutreDetails5} from "../../assets";
-import "./InfrastructureDetails.css"
+import {
+  infrastrucutreDetails1,
+  infrastrucutreDetails2,
+  infrastrucutreDetails3,
+  infrastrucutreDetails4,
+  infrastrucutreDetails5,
+} from "../../assets";
+import "./InfrastructureDetails.css";
 
-function InfrastructureDetail()  {
+function InfrastructureDetail() {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5
+      items: 5,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2
+      items: 2,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
+      items: 1,
+    },
   };
   return (
     <div className="infrastructure-details-container">
       <div className="infrastructure-details-header-text">
         <h1>Infrastructure Details</h1>
       </div>
-      <Carousel className="infrastructure-carousel-container" responsive={responsive} >
-      <img src={infrastrucutreDetails1} alt="carouser_Image_1" className="infrastructure-details-carousel-image" />
-      <img src={infrastrucutreDetails2} alt="carouser_Image_1" className="infrastructure-details-carousel-image" />
-      <img src={infrastrucutreDetails3} alt="carouser_Image_1" className="infrastructure-details-carousel-image" />
-      <img src={infrastrucutreDetails4} alt="carouser_Image_1" className="infrastructure-details-carousel-image" />
-      <img src={infrastrucutreDetails5} alt="carouser_Image_1" className="infrastructure-details-carousel-image" />
-      <img src={infrastrucutreDetails1} alt="carouser_Image_1" className="infrastructure-details-carousel-image" />
-     </Carousel>;
-        <h1>Educare EM School</h1>
+      <Carousel
+        className="infrastructure-carousel-container"
+        responsive={responsive}
+      >
+        <img
+          src={infrastrucutreDetails1}
+          alt="carouser_Image_1"
+          className="infrastructure-details-carousel-image"
+        />
+        <img
+          src={infrastrucutreDetails2}
+          alt="carouser_Image_1"
+          className="infrastructure-details-carousel-image"
+        />
+        <img
+          src={infrastrucutreDetails3}
+          alt="carouser_Image_1"
+          className="infrastructure-details-carousel-image"
+        />
+        <img
+          src={infrastrucutreDetails4}
+          alt="carouser_Image_1"
+          className="infrastructure-details-carousel-image"
+        />
+        <img
+          src={infrastrucutreDetails5}
+          alt="carouser_Image_1"
+          className="infrastructure-details-carousel-image"
+        />
+        <img
+          src={infrastrucutreDetails1}
+          alt="carouser_Image_1"
+          className="infrastructure-details-carousel-image"
+        />
+      </Carousel>
+      ;<h1>Educare Global School</h1>
       <table className="infrastructure-details-table">
         <tr>
-            <th>Room</th>
-            <th> Number </th>
-            <th>Length(in ft.)</th>
-            <th>Breadth(in ft.)</th>
+          <th>Room</th>
+          <th> Number </th>
+          <th>Length(in ft.)</th>
+          <th>Breadth(in ft.)</th>
         </tr>
         <tr>
           <td rowSpan={6}>Class Room</td>
         </tr>
-        <tr> 
+        <tr>
           <td>35</td>
           <td>21</td>
           <td>20</td>
@@ -112,4 +145,4 @@ function InfrastructureDetail()  {
   );
 }
 
-export default InfrastructureDetail
+export default InfrastructureDetail;

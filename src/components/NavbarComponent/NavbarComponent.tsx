@@ -1,38 +1,54 @@
 import "./NavbarComponent.css";
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Dropdown from "react-bootstrap/esm/Dropdown";
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+// import Dropdown from "react-bootstrap/esm/Dropdown";
+// import NavDropdown from "react-bootstrap/NavDropdown";
 
 function NavbarComponent() {
-  const About = () => {
-    return <span className="navbar-item-span-data">About</span>;
-  };
-  const Facilities = () => {
-    return <span className="navbar-item-span-data">Facilites</span>;
-  };
-  const Admissions = () => {
-    return <span className="navbar-item-span-data">Admissions</span>;
-  };
-  const Circulars = () => {
-    return <span className="navbar-item-span-data">Circulars</span>;
-  };
+  // const About = () => {
+  //   return <span className="navbar-item-span-data">About</span>;
+  // };
+  // const Facilities = () => {
+  //   return <span className="navbar-item-span-data">Facilites</span>;
+  // };
+  // const Admissions = () => {
+  //   return <span className="navbar-item-span-data">Admissions</span>;
+  // };
+  // const Circulars = () => {
+  //   return <span className="navbar-item-span-data">Circulars</span>;
+  // };
 
   return (
-    <nav id="navbar-container" >
-      <Navbar collapseOnSelect  variant="dark"  expand="lg" >
-        <Container fluid >
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" className="navbar-toggle ms-auto "/>
-          <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center">
-          <Nav  className="fw-bold" id="navitems-container"  >
-            <Nav.Link href="/" className="navbar-item-data"  >
-             <div  className="navbar-item-data">
-                Home
-              </div> 
-            </Nav.Link>
-            <hr />
-            <NavDropdown title={<About />}  className="navbar-item-data">
+    <nav id="navbar-container">
+      <Navbar collapseOnSelect variant="dark" expand="lg">
+        <Container fluid>
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            className="navbar-toggle ms-auto "
+          />
+          <Navbar.Collapse
+            id="responsive-navbar-nav"
+            className="justify-content-center"
+          >
+            <Nav className="fw-bold" id="navitems-container">
+              <Nav.Link href="/" className="navbar-item-data">
+                <div className="navbar-item-data">Home</div>
+              </Nav.Link>
+              <Nav.Link href="/aboutSchool" className="navbar-item-data">
+                <div className="navbar-item-data">About</div>
+              </Nav.Link>
+              <Nav.Link
+                href="/infrastructureFacility"
+                className="navbar-item-data"
+              >
+                <div className="navbar-item-data">Facilities</div>
+              </Nav.Link>
+              <Nav.Link href="#" className="navbar-item-data">
+                <div className="navbar-item-data">Teaching & Learning </div>
+              </Nav.Link>
+              <hr />
+              {/* <NavDropdown title={<About />}  className="navbar-item-data">
               <Dropdown.Item href="/management">
                 <div  className="dropdown-item">Management</div>
               </Dropdown.Item>
@@ -75,25 +91,20 @@ function NavbarComponent() {
               <Dropdown.Item href="/concludedEvents">
                 <div className="dropdown-item">Concluded Events</div>
               </Dropdown.Item>
-            </NavDropdown>
-            <hr />
-            <Nav.Link href="/contactUS" className="navbar-item-data"> 
-              <div className="navbar-item-data">
-              Contact Us
-              </div>
-            </Nav.Link>
-            <hr />
-            <Nav.Link href="/login" className="navbar-item-data">
-              <div className="navbar-item-data" >
-                Login
-              </div>
-            </Nav.Link>
-            <hr />
-          </Nav>
+            </NavDropdown> */}
+              <hr />
+              <Nav.Link href="/contactUS" className="navbar-item-data">
+                <div className="navbar-item-data">Contact Us</div>
+              </Nav.Link>
+              <hr />
+              <Nav.Link href="/login" className="navbar-item-data">
+                <div className="navbar-item-data">Login</div>
+              </Nav.Link>
+              <hr />
+            </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      
     </nav>
   );
 }

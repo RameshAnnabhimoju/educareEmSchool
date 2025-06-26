@@ -42,6 +42,11 @@ import schoolImage3 from "./schoolImage3.jpg";
 import schoolImage4 from "./schoolImage4.jpg";
 import schoolImage5 from "./schoolImage5.jpg";
 import schoolImage6 from "./schoolImage6.jpg";
+import edu1 from "./edu1.jpg";
+import edu2 from "./edu2.jpg";
+import edu3 from "./wdu3.jpg";
+import edu4 from "./edu4.jpg";
+import eduPrincipal from "./eduprincipal.jpg";
 export {
   class1,
   class2,
@@ -87,4 +92,9 @@ export {
   schoolImage4,
   schoolImage5,
   schoolImage6,
+  edu1,
+  edu2,
+  edu3,
+  edu4,
+  eduPrincipal,
 };

@@ -5,8 +5,24 @@
   --color-primary-extra-dark: #560202;
   --color-secondary: #a5913b;
   --color-secondary-bright: #ecc700;
+  --color-blue: #0d0ec6;
+  --color-green: #127011;
   --font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-family: var(--font-family);
-  --color-banner-background: linear-gradient(rgba(255, 0, 0, 0.295), rgba(255, 7, 7, 0.363));
+  --color-banner-background: linear-gradient(
+    rgba(17, 0, 255, 0.295),
+    rgba(7, 32, 255, 0.363)
+  );
+}
+.contact-us-input {
+  width: 400px;
+  margin: 5px;
+}
+#contact-us-from {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
 }

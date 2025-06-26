@@ -1,10 +1,8 @@
-
 #header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 8px 2.5%;
-
 }
 
 #header-title-container {
@@ -42,19 +40,27 @@
 }
 .header-icon {
   margin: 0 15px 0 0;
-  color: var(--color-primary);
+  color: var(--color-green);
+  cursor: pointer;
 }
 
 #header-contacts {
-  color: var(--color-primary);
+  color: var(--color-green);
   font-weight: bold;
 }
 
+#header-title-edu {
+  color: var(--color-green);
+  font-weight: 600;
+}
+#header-title-care {
+  color: var(--color-blue);
+  font-weight: 600;
+}
 /* Media Queries for Responsiveness */
 
 /* Large Screen Desktop */
 @media only screen and (min-width: 1025px) {
-
   #header-title {
     font-size: 35px;
   }
@@ -64,23 +70,21 @@
   #header-address {
     font-size: 15px;
   }
-  #header-logo{
+  #header-logo {
     width: 100px;
   }
   .header-icon {
-    margin: 0  15px 0 0;
+    margin: 0 15px 0 0;
   }
-
 }
-
 
 /* laptops and few tablets  */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   #header-container {
     padding: 10px;
-justify-content: center;
+    justify-content: center;
   }
-  #header-logo{
+  #header-logo {
     width: 50px;
   }
   #header-title {
@@ -98,7 +102,7 @@ justify-content: center;
   }
   #header-contacts {
     font-size: 14px;
-}
+  }
 }
 
 /* Tablet  */
@@ -106,7 +110,7 @@ justify-content: center;
   #header-container {
     padding: 10px;
   }
-  #header-logo{
+  #header-logo {
     width: 50px;
   }
   #header-title {
@@ -124,12 +128,11 @@ justify-content: center;
   }
   #header-contacts {
     font-size: 12px;
-}
+  }
 }
 /* Mobile (<= 480px) */
 @media only screen and (max-width: 426px) {
-
-  #header-logo{
+  #header-logo {
     width: 40px;
   }
   #header-title {
@@ -150,9 +153,8 @@ justify-content: center;
     font-size: 8px;
   }
 }
-@media only screen and (max-width: 320px){
-  
-  #header-right-section{
+@media only screen and (max-width: 320px) {
+  #header-right-section {
     margin: 0 8px 0 0;
   }
 }
