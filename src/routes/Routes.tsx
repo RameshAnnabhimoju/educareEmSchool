@@ -16,6 +16,7 @@ import TransferAdmission from "../pages/TransferAdmission/TransferAdmission";
 import UpComingEvents from "../pages/UpComingEvents/UpComingEvents";
 import ConcludedEvents from "../pages/ConcludedEvents/ConcludedEvents";
 import ContactUs from "../pages/ContactUs/ContactUs";
+import ComingSoon from "../pages/ComingSoon/ComingSoon";
 
 const AppRoutes = () => {
   return (
@@ -26,58 +27,28 @@ const AppRoutes = () => {
         element={<LoginPage />}
         errorElement={<ErrorPage />}
       />
-      <Route 
-      element={<PrivateRouter />}>
+      <Route element={<PrivateRouter />}>
         <Route path="/dashboard" element={<Dashboard />} />
       </Route>
-      <Route 
-      path="/management"
-      element={<Management />}
-      />
-      <Route 
-        path="/achievements"
-        element={<Achievements />}
-        />
-      <Route 
+      <Route path="/management" element={<Management />} />
+      <Route path="/achievements" element={<Achievements />} />
+      <Route
         path="/infrastructureDetails"
         element={<InfrastructureDetails />}
-        />
-      <Route 
-        path="/aboutSchool"
-        element={<AboutSchool />}
-        />
-      <Route 
+      />
+      <Route path="/aboutSchool" element={<AboutSchool />} />
+      <Route
         path="/infrastructureFacility"
         element={<InfrastructureFacility />}
-        />
-      <Route 
-        path="/transportation"
-        element={<Transportation />}
-        />
-      <Route 
-        path="/admissionProcess"
-        element={<AdmissionProcess />}
-        />
-      <Route 
-        path="/feeStructure"
-        element={<FeeStructure />}
-        />
-      <Route 
-        path="/transferAdmission"
-        element={<TransferAdmission />}
-        />
-      <Route 
-        path="/upComingEvents"
-        element={<UpComingEvents />}
-        />
-      <Route 
-        path="/concludedEvents"
-        element={<ConcludedEvents />}
-        />
-      <Route 
-        path="/contactUS"
-        element={<ContactUs />}
-        />
+      />
+      <Route path="/transportation" element={<Transportation />} />
+      <Route path="/admissionProcess" element={<AdmissionProcess />} />
+      <Route path="/feeStructure" element={<FeeStructure />} />
+      <Route path="/transferAdmission" element={<TransferAdmission />} />
+      <Route path="/upComingEvents" element={<UpComingEvents />} />
+      <Route path="/concludedEvents" element={<ConcludedEvents />} />
+      <Route path="/contactUS" element={<ContactUs />} />
+      <Route path="/comingSoon" element={<ComingSoon />} />
     </Routes>
   );
 };

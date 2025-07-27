@@ -5,7 +5,8 @@
   --color-primary-extra-dark: #560202;
   --color-secondary: #a5913b;
   --color-secondary-bright: #ecc700;
-  --color-blue: #0d0ec6;
+  --color-blue: #0e3461;
+  --color-gold: #ebb359;
   --color-green: #127011;
   --font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -25,4 +26,7 @@
   align-items: center;
   justify-content: center;
   margin: 20px 0;
+}
+a {
+  text-decoration: none;
 }

@@ -40,12 +40,12 @@
 }
 .header-icon {
   margin: 0 15px 0 0;
-  color: var(--color-green);
+  color: var(--color-blue);
   cursor: pointer;
 }
 
 #header-contacts {
-  color: var(--color-green);
+  color: var(--color-blue);
   font-weight: bold;
 }
 

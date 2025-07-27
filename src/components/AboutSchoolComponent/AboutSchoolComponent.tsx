@@ -5,7 +5,7 @@ function AboutSchoolComponent() {
     <div id="about-school-container">
       <div id="about-school-text">
         <strong> Educare Global School</strong>, a leading Educational
-        Institution in the region was founded by K. Murarii is a premier
+        Institution in the region was founded by K. Murarji is a premier
         educational institution committed to delivering high-quality education
         and holistic development. With a strong foundation in academic
         excellence, our school provides a nurturing environment where students

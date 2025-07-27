@@ -3,12 +3,15 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 // import Dropdown from "react-bootstrap/esm/Dropdown";
-// import NavDropdown from "react-bootstrap/NavDropdown";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import { Link } from "react-router-dom";
 
 function NavbarComponent() {
-  // const About = () => {
-  //   return <span className="navbar-item-span-data">About</span>;
-  // };
+  const About = () => {
+    return (
+      <span className="navbar-item-span-data">Mandatory Public Disclosure</span>
+    );
+  };
   // const Facilities = () => {
   //   return <span className="navbar-item-span-data">Facilites</span>;
   // };
@@ -32,65 +35,96 @@ function NavbarComponent() {
             className="justify-content-center"
           >
             <Nav className="fw-bold" id="navitems-container">
-              <Nav.Link href="/" className="navbar-item-data">
+              <Link to="/" className="navbar-item-data">
                 <div className="navbar-item-data">Home</div>
-              </Nav.Link>
-              <Nav.Link href="/aboutSchool" className="navbar-item-data">
+              </Link>
+              <Link to="/aboutSchool" className="navbar-item-data">
                 <div className="navbar-item-data">About</div>
-              </Nav.Link>
-              <Nav.Link
-                href="/infrastructureFacility"
+              </Link>
+              <Link to="/infrastructureFacility" className="navbar-item-data">
+                <div className="navbar-item-data">Facilities</div>
+              </Link>
+              <Link to="/comingSoon" className="navbar-item-data">
+                <div className="navbar-item-data">Teaching & Learning </div>
+              </Link>
+              <hr />
+              <NavDropdown
+                align={"end"}
+                title={<About />}
                 className="navbar-item-data"
               >
-                <div className="navbar-item-data">Facilities</div>
-              </Nav.Link>
-              <Nav.Link href="#" className="navbar-item-data">
-                <div className="navbar-item-data">Teaching & Learning </div>
-              </Nav.Link>
+                <Link to="/comingSoon">
+                  <div className="dropdown-item">Society Certificate</div>
+                </Link>
+                <Link to="/comingSoon">
+                  <div className="dropdown-item">SMC</div>
+                </Link>
+                <Link to="/comingSoon">
+                  <div className="dropdown-item">PTA</div>
+                </Link>
+                <Link to="/comingSoon">
+                  <div className="dropdown-item">Academic Calendar</div>
+                </Link>
+                <Link to="/comingSoon">
+                  <div className="dropdown-item">Fee Structure</div>
+                </Link>
+                <Link to="/comingSoon">
+                  <div className="dropdown-item">Fire Safety</div>
+                </Link>
+                <Link to="/comingSoon">
+                  <div className="dropdown-item">Drinking Water</div>
+                </Link>
+                <Link to="/comingSoon">
+                  <div className="dropdown-item">
+                    Building Safety Certificate
+                  </div>
+                </Link>
+                <Link to="/comingSoon">
+                  <div className="dropdown-item">NOC</div>
+                </Link>
+                <Link to="/comingSoon">
+                  <div className="dropdown-item">Mandatory Disclosure</div>
+                </Link>
+                <Link to="/comingSoon">
+                  <div className="dropdown-item">Affidavit</div>
+                </Link>
+                <Link to="/comingSoon">
+                  <div className="dropdown-item">Water Sample Test</div>
+                </Link>
+                <Link to="/comingSoon">
+                  <div className="dropdown-item">Land Certificate</div>
+                </Link>
+              </NavDropdown>
               <hr />
-              {/* <NavDropdown title={<About />}  className="navbar-item-data">
-              <Dropdown.Item href="/management">
-                <div  className="dropdown-item">Management</div>
-              </Dropdown.Item>
-              <Dropdown.Item href="/achievements">
-                <div  className="dropdown-item">Achievements</div>
-              </Dropdown.Item>
-              <Dropdown.Item href="/infrastructureDetails">
-                <div className="dropdown-item">Infrastructure Details</div>
-              </Dropdown.Item>
-              <Dropdown.Item href="/aboutSchool">
-              <div  className="dropdown-item">About School</div>
-              </Dropdown.Item>
-            </NavDropdown>            
-            <hr />
+              {/*
             <NavDropdown title={<Facilities />} className="navbar-item-data">
-              <Dropdown.Item href="/infrastructureFacility">
+              <Link href="/infrastructureFacility">
                 <div className="dropdown-item">Infrastructure</div>
-              </Dropdown.Item>
-              <Dropdown.Item href="/transportation">
+              </Link>
+              <Link href="/transportation">
                 <div className="dropdown-item">Transportation</div>
-              </Dropdown.Item>
+              </Link>
             </NavDropdown>
             <hr />
             <NavDropdown title={<Admissions />} className="navbar-item-data">
-              <Dropdown.Item href="/admissionProcess">
+              <Link href="/admissionProcess">
                 <div className="dropdown-item">Admission Process</div>
-              </Dropdown.Item>
-              <Dropdown.Item href="/feeStructure">
+              </Link>
+              <Link href="/feeStructure">
                 <div className="dropdown-item">Fee Structure</div>
-              </Dropdown.Item>
-              <Dropdown.Item href="/transferAdmission">
+              </Link>
+              <Link href="/transferAdmission">
                 <div className="dropdown-item">Transfer Admission</div>
-              </Dropdown.Item>
+              </Link>
             </NavDropdown>
             <hr />
             <NavDropdown title={<Circulars />}className="navbar-item-data">
-              <Dropdown.Item href="/upComingEvents">
+              <Link href="/upComingEvents">
                 <div className="dropdown-item">Upcoming Events</div>
-              </Dropdown.Item>
-              <Dropdown.Item href="/concludedEvents">
+              </Link>
+              <Link href="/concludedEvents">
                 <div className="dropdown-item">Concluded Events</div>
-              </Dropdown.Item>
+              </Link>
             </NavDropdown> */}
               <hr />
               <Nav.Link href="/contactUS" className="navbar-item-data">

@@ -13,7 +13,7 @@
   color: white !important;
   text-decoration: none;
   border: none;
-  padding: 0 30px;
+  padding: 0 15px;
 }
 .navbar-item-span-data {
   color: white;
@@ -22,12 +22,12 @@
 .navbar-item-data:hover,
 .navbar-item-span-data:hover {
   cursor: pointer;
-  color: var(--color-secondary-bright) !important;
+  color: var(--color-gold) !important;
 }
 .navbar-item-data:focus,
 .navbar-item-span-data:focus {
   box-shadow: none;
-  color: var(--color-secondary-bright) !important;
+  color: var(--color-gold) !important;
 }
 .dropdown-menu {
   background-color: var(--color-primary);
@@ -36,6 +36,7 @@
   color: white;
   font-weight: bold;
   padding: 0.5rem 1rem;
+  text-decoration: none !important;
 }
 .dropdown-item:focus {
   color: var(--color-secondary-bright);
@@ -51,7 +52,7 @@
 
 @media only screen and (min-width: 1445px) {
   .navbar-item-data {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 }
 @media only screen and (max-width: 991px) {

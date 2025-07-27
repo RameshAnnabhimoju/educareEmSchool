@@ -6,7 +6,7 @@ function Management() {
       <div className="management-header-text">
         <h1>The Management</h1>
         <p>
-          The School was founded by founded by K. Murarii is a premier
+          The School was founded by founded by K. Murarji is a premier
           educational institution committed to delivering high-quality education
           and holistic development. With a strong foundation in academic
           excellence, our school provides a nurturing environment where students
@@ -19,15 +19,6 @@ function Management() {
         and high-level education in our village. His efforts have transformed
         countless lives, bringing knowledge, opportunities, and hope to the
         community.
-      </div>
-      <div className="management-details-list">
-        <ul className="management-details-ul">
-          <li>Mr. Abraham Thomas</li>
-          <li>Mr. Abraham Thomas</li>
-          <li>Mr. Abraham Thomas</li>
-          <li>Mr. Abraham Thomas</li>
-          <li>Mr. Abraham Thomas</li>
-        </ul>
       </div>
     </div>
   );

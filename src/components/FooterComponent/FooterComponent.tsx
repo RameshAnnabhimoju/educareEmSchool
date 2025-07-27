@@ -20,7 +20,7 @@ function FooterComponent() {
         <div id="footer-address-value">
           New High way, Mamidikuduru mandal, <br />
           <br />
-          Dr. BR Ambedkar konaseema district, Nagaram, <br />
+          Dr. BR Ambedkar konaseema district, Geddada, <br />
           <br />
           Andhra Pradesh. 533249
         </div>
@@ -34,8 +34,8 @@ function FooterComponent() {
           <strong>Phone:</strong> 9121344456
         </div>
         <div id="footer-admissions-mail">
-          <strong>Mail:</strong> principal@educareschool.edu.in ,<br />
-          director@educareschool.edu.in
+          <strong>Mail:</strong> educaretheglobalschool@gmail.com ,<br />
+          principal@educareglobalschool.com
         </div>
       </div>
     </div>

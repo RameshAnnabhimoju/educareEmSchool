@@ -1,17 +1,20 @@
 import "./HeaderComponent.css";
 import { logo } from "../../assets";
+import { Link } from "react-router-dom";
 function HeaderComponent() {
   return (
     <header id="header-container">
       <div id="header-title-container">
-        <img alt="header logo" id="header-logo" src={logo} />
+        <Link to="/">
+          <img alt="header logo" id="header-logo" src={logo} />
+        </Link>
         <div id="header-title-section">
           <div id="header-title">
             {" "}
-            <span id="header-title-edu">Edu</span>
-            <span id="header-title-care">care</span> Global School
+            <span id="header-title-edu">EDU</span>
+            <span id="header-title-care">CARE</span> GLOBAL SCHOOL
           </div>
-          <div id="header-sub-title">(Affilliated to the CBSE, Delhi)</div>
+          {/* <div id="header-sub-title">(Affilliated to the CBSE, Delhi)</div> */}
           <div id="header-address">
             New High way, Geddada Village, Dr BR Ambedkar Konaseema District,
             AP- 533249
