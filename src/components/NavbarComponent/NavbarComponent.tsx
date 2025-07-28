@@ -69,6 +69,9 @@ function NavbarComponent() {
                   <div className="dropdown-item">Fee Structure</div>
                 </Link>
                 <Link to="/comingSoon">
+                  <div className="dropdown-item">Self-Certification</div>
+                </Link>
+                <Link to="/comingSoon">
                   <div className="dropdown-item">Fire Safety</div>
                 </Link>
                 <Link to="/comingSoon">
@@ -78,6 +81,9 @@ function NavbarComponent() {
                   <div className="dropdown-item">
                     Building Safety Certificate
                   </div>
+                </Link>
+                <Link to="/comingSoon">
+                  <div className="dropdown-item">State Registration</div>
                 </Link>
                 <Link to="/comingSoon">
                   <div className="dropdown-item">NOC</div>
