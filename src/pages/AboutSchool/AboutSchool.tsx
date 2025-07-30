@@ -35,7 +35,7 @@ function AboutSchool() {
       <div className="about-school-header-text">
         <h1>About School</h1>
       </div>
-      <h1>Educare Global School</h1>
+      <h1>Educare EM School</h1>
       <div className="about-school-content-container">
         <div className="about-school-image-content">
           <img src={aboutSchool1} alt="" className="aboutschool-images" />
@@ -45,8 +45,7 @@ function AboutSchool() {
           <p>
             <strong>Campus, its Location:</strong>
             The beautidul campus,situated in Tatipaka Village in Razole ,Dr.
-            B.R. Ambedkar Konaseema District is the home of Educare Global
-            School.
+            B.R. Ambedkar Konaseema District is the home of Educare EM School.
           </p>
           <p>
             Our school is a place where students can learn and grow in a safe

@@ -6,7 +6,7 @@ import class5 from "./class5.jpg";
 import class6 from "./class6.jpg";
 import kidplay from "./kid-play.jpg";
 import kidplay2 from "./kid-play2.jpg";
-import logo from "./GLOBAL LOGO.jpg";
+import logo from "./logo.jpg";
 import principal from "./principal.jpg";
 import school from "./school.jpg";
 import loginBanner from "./login-banner.png";

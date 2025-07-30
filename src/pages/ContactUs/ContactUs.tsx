@@ -19,7 +19,7 @@ function ContactUs() {
           Address
         </p>
         <h3 className="contact-us-subdetails">
-          Educare Global School <br />
+          Educare EM School <br />
           New High way, Mamidikuduru mandal,
           <br />
           Dr. BR Ambedkar konaseema district, Nagaram,

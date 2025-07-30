@@ -16,7 +16,7 @@ function FooterComponent() {
         referrerPolicy="no-referrer-when-downgrade"
       />
       <div id="footer-address">
-        <div id="footer-address-title">Educare Global School</div>
+        <div id="footer-address-title">Educare EM School</div>
         <div id="footer-address-value">
           New High way, Mamidikuduru mandal, <br />
           <br />

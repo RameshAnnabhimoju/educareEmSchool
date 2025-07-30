@@ -53,51 +53,51 @@ function NavbarComponent() {
                 title={<About />}
                 className="navbar-item-data"
               >
-                <Link to="/comingSoon">
+                <Link to="/society-certificate">
                   <div className="dropdown-item">Society Certificate</div>
                 </Link>
-                <Link to="/comingSoon">
+                <Link to="/smc">
                   <div className="dropdown-item">SMC</div>
                 </Link>
-                <Link to="/comingSoon">
+                <Link to="/pta">
                   <div className="dropdown-item">PTA</div>
                 </Link>
-                <Link to="/comingSoon">
+                <Link to="/academic-calendar">
                   <div className="dropdown-item">Academic Calendar</div>
                 </Link>
-                <Link to="/comingSoon">
+                <Link to="/fee-structure">
                   <div className="dropdown-item">Fee Structure</div>
                 </Link>
-                <Link to="/comingSoon">
+                <Link to="/self-certification">
                   <div className="dropdown-item">Self-Certification</div>
                 </Link>
-                <Link to="/comingSoon">
+                <Link to="/fire-salety">
                   <div className="dropdown-item">Fire Safety</div>
                 </Link>
-                <Link to="/comingSoon">
+                <Link to="/drinking-water">
                   <div className="dropdown-item">Drinking Water</div>
                 </Link>
-                <Link to="/comingSoon">
+                <Link to="/building-safety-certificate">
                   <div className="dropdown-item">
                     Building Safety Certificate
                   </div>
                 </Link>
-                <Link to="/comingSoon">
+                <Link to="/state-registration">
                   <div className="dropdown-item">State Registration</div>
                 </Link>
-                <Link to="/comingSoon">
+                <Link to="/noc">
                   <div className="dropdown-item">NOC</div>
                 </Link>
-                <Link to="/comingSoon">
+                <Link to="/mandatory-disclosure">
                   <div className="dropdown-item">Mandatory Disclosure</div>
                 </Link>
-                <Link to="/comingSoon">
+                <Link to="/affidavit">
                   <div className="dropdown-item">Affidavit</div>
                 </Link>
-                <Link to="/comingSoon">
+                <Link to="/water-sample-test">
                   <div className="dropdown-item">Water Sample Test</div>
                 </Link>
-                <Link to="/comingSoon">
+                <Link to="/land-certificate">
                   <div className="dropdown-item">Land Certificate</div>
                 </Link>
               </NavDropdown>

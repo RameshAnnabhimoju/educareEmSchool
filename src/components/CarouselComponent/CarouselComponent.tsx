@@ -35,7 +35,7 @@ function CarouselComponent() {
       <Carousel.Item>
         <img src={class3} alt="carouser_Image_1" className="carousel_Image" />
         <Carousel.Caption>
-          <h3>Educare Global School</h3>
+          <h3>Educare EM School</h3>
           <p>
             strives to provide the best possible facilities to its students,
             including a highly qualified teaching faculty, with the ultimate aim
@@ -46,7 +46,7 @@ function CarouselComponent() {
       <Carousel.Item>
         <img src={class1} alt="carouser_Image_2" className="carousel_Image" />
         <Carousel.Caption>
-          <h3>Educare Global School</h3>
+          <h3>Educare EM School</h3>
           <p>
             strives to provide the best possible facilities to its students,
             including a highly qualified teaching faculty, with the ultimate aim
@@ -57,7 +57,7 @@ function CarouselComponent() {
       <Carousel.Item>
         <img src={class2} alt="carouser_Image_3" className="carousel_Image" />
         <Carousel.Caption>
-          <h3>Educare Global School</h3>
+          <h3>Educare EM School</h3>
           <p>
             strives to provide the best possible facilities to its students,
             including a highly qualified teaching faculty, with the ultimate aim

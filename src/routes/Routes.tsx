@@ -17,6 +17,7 @@ import UpComingEvents from "../pages/UpComingEvents/UpComingEvents";
 import ConcludedEvents from "../pages/ConcludedEvents/ConcludedEvents";
 import ContactUs from "../pages/ContactUs/ContactUs";
 import ComingSoon from "../pages/ComingSoon/ComingSoon";
+import MandatoryPublicDisclosure from "../pages/MandatoryPublicDIsclosure/MandatoryPublicDisclosure";
 
 const AppRoutes = () => {
   return (
@@ -49,6 +50,38 @@ const AppRoutes = () => {
       <Route path="/concludedEvents" element={<ConcludedEvents />} />
       <Route path="/contactUS" element={<ContactUs />} />
       <Route path="/comingSoon" element={<ComingSoon />} />
+
+      <Route
+        path="/society-certificate"
+        element={<MandatoryPublicDisclosure />}
+      />
+      <Route path="/smc" element={<MandatoryPublicDisclosure />} />
+      <Route path="/pta" element={<MandatoryPublicDisclosure />} />
+      <Route
+        path="/academic-calendar"
+        element={<MandatoryPublicDisclosure />}
+      />
+      <Route path="/fee-structure" element={<MandatoryPublicDisclosure />} />
+      <Route
+        path="/self-certification"
+        element={<MandatoryPublicDisclosure />}
+      />
+      <Route path="/fire-safety" element={<MandatoryPublicDisclosure />} />
+      <Route path="/drinking-water" element={<MandatoryPublicDisclosure />} />
+      <Route
+        path="/building-safety-certificate"
+        element={<MandatoryPublicDisclosure />}
+      />
+      <Route
+        path="/mandatory-disclosure"
+        element={<MandatoryPublicDisclosure />}
+      />
+      <Route path="/affidavit" element={<MandatoryPublicDisclosure />} />
+      <Route
+        path="/water-sample-test"
+        element={<MandatoryPublicDisclosure />}
+      />
+      <Route path="/land-certificate" element={<MandatoryPublicDisclosure />} />
     </Routes>
   );
 };

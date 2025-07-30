@@ -1,0 +1,14 @@
+.mpd-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+}
+.mpd-heading {
+  margin-top: 25px;
+}
+.mpd-image {
+  width: 600px;
+  height: 750px;
+}

@@ -198,8 +198,8 @@ function FeeStructure() {
               Brahmavar are preferred. However, DDs on Union Bank of India,
               Canara Bank (both at Varambally), Bank of Baroda, State Bank of
               India (both at Brahmavar), Axis Bank and ICICI Bank are also
-              accepted. This DD should not be drawn on Educare Global School.
-              DDs drawn as instructed here only will be accepted.
+              accepted. This DD should not be drawn on Educare EM School. DDs
+              drawn as instructed here only will be accepted.
             </p>
           </Accordion.Body>
         </Accordion.Item>

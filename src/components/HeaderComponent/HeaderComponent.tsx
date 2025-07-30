@@ -12,7 +12,7 @@ function HeaderComponent() {
           <div id="header-title">
             {" "}
             <span id="header-title-edu">EDU</span>
-            <span id="header-title-care">CARE</span> GLOBAL SCHOOL
+            <span id="header-title-care">CARE</span> EM SCHOOL
           </div>
           {/* <div id="header-sub-title">(Affilliated to the CBSE, Delhi)</div> */}
           <div id="header-address">
@@ -27,7 +27,7 @@ function HeaderComponent() {
         <i
           className="fa-brands fa-square-instagram header-icon"
           onClick={() =>
-            window.open("https://www.instagram.com/educare.global/", "_blank")
+            window.open("https://www.instagram.com/educare.EM/", "_blank")
           }
         />
         <i className="fa-brands fa-square-facebook header-icon" />

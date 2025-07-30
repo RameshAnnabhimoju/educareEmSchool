@@ -12,7 +12,7 @@ function FacilitiesComponent() {
           is no more, the high ideals and principles he embodied are inherited
           by his successors. The management is composed of individuals with rich
           experience in the field of education both in India and abroad. Little
-          Rock’s global vision of education is the obvious result of such an
+          Rock’s EM vision of education is the obvious result of such an
           enlightened leadership
         </div>
         <button className="facilities-button">Read more</button>

@@ -68,7 +68,7 @@ function InfrastructureDetail() {
           className="infrastructure-details-carousel-image"
         />
       </Carousel>
-      ;<h1>Educare Global School</h1>
+      ;<h1>Educare EM School</h1>
       <table className="infrastructure-details-table">
         <tr>
           <th>Room</th>

@@ -28,7 +28,7 @@ function Achievements() {
         <div className="main-certificate-2">
           <img src={achievements1} alt="Certificate 2" />
           <p>
-            Educare Global is awarded SCHOOL WITH BEST Education 2024 by NSA
+            Educare EM is awarded SCHOOL WITH BEST Education 2024 by NSA
             (National School Awards).
           </p>
         </div>
@@ -38,8 +38,8 @@ function Achievements() {
       <div className="sub-certificates-container">
         <div className="sub-certificate-type-right">
           <p>
-            Educare Global School has been ranked as one of the top 10 schools
-            in the country
+            Educare EM School has been ranked as one of the top 10 schools in
+            the country
           </p>
           <img src={achievements2} alt="Sub Certificate" />
         </div>
@@ -48,15 +48,15 @@ function Achievements() {
         <div className="sub-certificate-type-left">
           <img src={achievements4} alt="Sub Certificate" />
           <p>
-            Educare Global School has been ranked as one of the top 10 schools
-            in the country
+            Educare EM School has been ranked as one of the top 10 schools in
+            the country
           </p>
         </div>
         <hr />
         <div className="sub-certificate-type-right">
           <p>
-            Educare Global School has been ranked as one of the top 10 schools
-            in the country
+            Educare EM School has been ranked as one of the top 10 schools in
+            the country
           </p>
           <img src={achievements5} alt="Sub Certificate" />
         </div>
@@ -65,8 +65,8 @@ function Achievements() {
         <div className="sub-certificate-type-left">
           <img src={achievements6} alt="Sub Certificate" />
           <p>
-            Educare Global School has been ranked as one of the top 10 schools
-            in the country
+            Educare EM School has been ranked as one of the top 10 schools in
+            the country
           </p>
         </div>
       </div>

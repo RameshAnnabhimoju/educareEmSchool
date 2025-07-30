@@ -153,7 +153,7 @@ function TransferAdmission() {
           necessary skills to study in a higher class may not be promoted.
         </p>
         <p>
-          Educare Global School is interested in providing additional possible
+          Educare EM School is interested in providing additional possible
           facilities for slow or weak learners to acquire the needed skills if
           parents co-operate with the School in this regard. However, the School
           strongly discourages the practice of excessive home work,
