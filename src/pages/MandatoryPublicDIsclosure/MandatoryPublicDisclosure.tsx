@@ -9,6 +9,7 @@ import ComingSoon from "../ComingSoon/ComingSoon";
 import noc from "../../assets/noc.pdf";
 import waterSaftey from "../../assets/water-testing.jpg";
 import buildingSaftey from "../../assets/building-safety.jpg";
+import feeStructure from "../../assets/strength.pdf";
 const MandatoryPublicDisclosure = () => {
   const path = useLocation();
   return (
@@ -58,7 +59,12 @@ const MandatoryPublicDisclosure = () => {
       {path.pathname == "/fee-structure" && (
         <div className="mpd-item-container">
           <h1 className="mpd-heading">Fee Structure</h1>
-          <ComingSoon />
+          <object
+            className="pdf"
+            data={feeStructure}
+            width="800"
+            height="950"
+          ></object>
         </div>
       )}
       {path.pathname == "/self-certification" && (
@@ -94,7 +100,7 @@ const MandatoryPublicDisclosure = () => {
       {path.pathname == "/noc" && (
         <div className="mpd-item-container">
           <h1 className="mpd-heading">NOC</h1>
-          <object className="pdf" data={pta} width="800" height="950"></object>
+          <object className="pdf" data={noc} width="800" height="950"></object>
         </div>
       )}
       {path.pathname == "/affidavit" && (

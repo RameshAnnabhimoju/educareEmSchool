@@ -67,6 +67,7 @@ const AppRoutes = () => {
         element={<MandatoryPublicDisclosure />}
       />
       <Route path="/fire-safety" element={<MandatoryPublicDisclosure />} />
+      <Route path="/noc" element={<MandatoryPublicDisclosure />} />
       <Route path="/drinking-water" element={<MandatoryPublicDisclosure />} />
       <Route
         path="/building-safety-certificate"

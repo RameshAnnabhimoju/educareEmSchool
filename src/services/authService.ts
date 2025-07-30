@@ -1,5 +1,5 @@
 import { AxiosError } from "axios";
-import { appConfiguration } from "../configs/appConfiguration";
+import { appConfiguration } from "../configs/AppConfiguration";
 import { api } from "../configs/axiosConfiguration";
 type loginProps = {
   data: object;

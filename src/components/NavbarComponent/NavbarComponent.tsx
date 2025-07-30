@@ -71,7 +71,7 @@ function NavbarComponent() {
                 <Link to="/self-certification">
                   <div className="dropdown-item">Self-Certification</div>
                 </Link>
-                <Link to="/fire-salety">
+                <Link to="/fire-safety">
                   <div className="dropdown-item">Fire Safety</div>
                 </Link>
                 <Link to="/drinking-water">
