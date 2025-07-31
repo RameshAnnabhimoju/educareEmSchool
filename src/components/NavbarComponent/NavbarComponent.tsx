@@ -68,8 +68,8 @@ function NavbarComponent() {
                 <Link to="/fee-structure">
                   <div className="dropdown-item">Fee Structure</div>
                 </Link>
-                <Link to="/self-certification">
-                  <div className="dropdown-item">Self-Certification</div>
+                <Link to="/sanitary-certification">
+                  <div className="dropdown-item">Sanitary Certificate</div>
                 </Link>
                 <Link to="/fire-safety">
                   <div className="dropdown-item">Fire Safety</div>
@@ -82,14 +82,11 @@ function NavbarComponent() {
                     Building Safety Certificate
                   </div>
                 </Link>
-                <Link to="/state-registration">
-                  <div className="dropdown-item">State Registration</div>
+                <Link to="/global-recognition">
+                  <div className="dropdown-item">Global Recognition</div>
                 </Link>
                 <Link to="/noc">
                   <div className="dropdown-item">NOC</div>
-                </Link>
-                <Link to="/mandatory-disclosure">
-                  <div className="dropdown-item">Mandatory Disclosure</div>
                 </Link>
                 <Link to="/affidavit">
                   <div className="dropdown-item">Affidavit</div>

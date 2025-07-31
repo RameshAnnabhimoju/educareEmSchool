@@ -10,6 +10,9 @@ import noc from "../../assets/noc.pdf";
 import waterSaftey from "../../assets/water-testing.jpg";
 import buildingSaftey from "../../assets/building-safety.jpg";
 import feeStructure from "../../assets/strength.pdf";
+import sanitaryCertificate from "../../assets/sanitary.pdf";
+import globalRecognition from "../../assets/Global Recognition.pdf";
+import affidavit from "../../assets/affidavit.pdf";
 const MandatoryPublicDisclosure = () => {
   const path = useLocation();
   return (
@@ -67,10 +70,15 @@ const MandatoryPublicDisclosure = () => {
           ></object>
         </div>
       )}
-      {path.pathname == "/self-certification" && (
+      {path.pathname == "/sanitary-certification" && (
         <div className="mpd-item-container">
-          <h1 className="mpd-heading">Self Certification</h1>
-          <ComingSoon />
+          <h1 className="mpd-heading">Sanitary Certificate</h1>
+          <object
+            className="pdf"
+            data={sanitaryCertificate}
+            width="800"
+            height="950"
+          ></object>
         </div>
       )}
       {path.pathname == "/fire-safety" && (
@@ -91,10 +99,15 @@ const MandatoryPublicDisclosure = () => {
           <img src={buildingSaftey} alt="Water Safety" className="mpd-image" />
         </div>
       )}
-      {path.pathname == "/state-registration" && (
+      {path.pathname == "/global-recognition" && (
         <div className="mpd-item-container">
-          <h1 className="mpd-heading">State Registration</h1>
-          <ComingSoon />
+          <h1 className="mpd-heading">Global Recognition</h1>
+          <object
+            className="pdf"
+            data={globalRecognition}
+            width="800"
+            height="950"
+          ></object>
         </div>
       )}
       {path.pathname == "/noc" && (
@@ -106,7 +119,12 @@ const MandatoryPublicDisclosure = () => {
       {path.pathname == "/affidavit" && (
         <div className="mpd-item-container">
           <h1 className="mpd-heading">Affidavit</h1>
-          <ComingSoon />
+          <object
+            className="pdf"
+            data={affidavit}
+            width="800"
+            height="950"
+          ></object>
         </div>
       )}
       {path.pathname == "/water-sample-test" && (

@@ -63,7 +63,7 @@ const AppRoutes = () => {
       />
       <Route path="/fee-structure" element={<MandatoryPublicDisclosure />} />
       <Route
-        path="/self-certification"
+        path="/sanitary-certification"
         element={<MandatoryPublicDisclosure />}
       />
       <Route path="/fire-safety" element={<MandatoryPublicDisclosure />} />
@@ -74,7 +74,7 @@ const AppRoutes = () => {
         element={<MandatoryPublicDisclosure />}
       />
       <Route
-        path="/mandatory-disclosure"
+        path="/global-recognition"
         element={<MandatoryPublicDisclosure />}
       />
       <Route path="/affidavit" element={<MandatoryPublicDisclosure />} />
