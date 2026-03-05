@@ -5,7 +5,7 @@ import pta from "../../assets/pta.pdf";
 import cal1 from "../../assets/1st to 5th calender.pdf";
 import cal2 from "../../assets/6th to 8th calender.pdf";
 import "./MandatoryPublicDisclosure.css";
-import ComingSoon from "../ComingSoon/ComingSoon";
+// import ComingSoon from "../ComingSoon/ComingSoon";
 import noc from "../../assets/noc.pdf";
 import waterSaftey from "../../assets/water-testing.jpg";
 import buildingSaftey from "../../assets/building-safety.jpg";
@@ -13,6 +13,8 @@ import feeStructure from "../../assets/strength.pdf";
 import sanitaryCertificate from "../../assets/sanitary.pdf";
 import globalRecognition from "../../assets/Global Recognition.pdf";
 import affidavit from "../../assets/affidavit.pdf";
+import landCertificate from "../../assets/land_certificate.pdf";
+import selfCertificate from "../../assets/self_certificate.pdf";
 const MandatoryPublicDisclosure = () => {
   const path = useLocation();
   return (
@@ -136,7 +138,23 @@ const MandatoryPublicDisclosure = () => {
       {path.pathname == "/land-certificate" && (
         <div className="mpd-item-container">
           <h1 className="mpd-heading">Land Certificate</h1>
-          <ComingSoon />
+          <object
+            className="pdf"
+            data={landCertificate}
+            width="800"
+            height="950"
+          ></object>
+        </div>
+      )}
+      {path.pathname == "/self-certificate" && (
+        <div className="mpd-item-container">
+          <h1 className="mpd-heading">Self Certificate</h1>
+          <object
+            className="pdf"
+            data={selfCertificate}
+            width="800"
+            height="950"
+          ></object>
         </div>
       )}
     </div>

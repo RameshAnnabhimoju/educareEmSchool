@@ -94,6 +94,9 @@ function NavbarComponent() {
                 <Link to="/water-sample-test">
                   <div className="dropdown-item">Water Sample Test</div>
                 </Link>
+                <Link to="/self-certificate">
+                  <div className="dropdown-item">Self Certificate</div>
+                </Link>
                 <Link to="/land-certificate">
                   <div className="dropdown-item">Land Certificate</div>
                 </Link>

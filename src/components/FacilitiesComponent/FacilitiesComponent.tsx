@@ -1,36 +1,43 @@
-import { class5, class6 } from "../../assets";
+import { class1, schoolImage2 } from "../../assets";
 import "./FacilitiesComponent.css";
 function FacilitiesComponent() {
   return (
     <div id="facilities-container">
       <div className="facilities-card">
-        <img src={class5} alt="" className="facilities-card-image" />
-        <div className="facilities-card-title">School Facility</div>
+        <img src={class1} alt="" className="facilities-card-image" />
+        <div className="facilities-card-title">Classrooms</div>
         <div className="facilities-card-text">
-          The School was founded by Late Dr C.T. Abraham, who had extensive
-          experience in the field of education in India and the USA. Though he
-          is no more, the high ideals and principles he embodied are inherited
-          by his successors. The management is composed of individuals with rich
-          experience in the field of education both in India and abroad. Little
-          Rock’s EM vision of education is the obvious result of such an
-          enlightened leadership
+          At Educare EM School, we believe that a good learning environment
+          shapes a child’s future. Our classrooms are bright, colorful, and
+          designed to make learning enjoyable for young minds. Each classroom is
+          equipped with comfortable seating, engaging educational visuals, and a
+          structured setup that helps students focus while staying curious. The
+          cheerful learning atmosphere encourages children to read, explore, and
+          participate actively in their lessons. Under the guidance of our
+          dedicated teachers and the leadership of K. Murarji, we strive to
+          create a space where every child feels confident, supported, and
+          inspired to learn.
         </div>
-        <button className="facilities-button">Read more</button>
+        {/* <button className="facilities-button">Read more</button> */}
       </div>
       <div className="facilities-card">
-        <img src={class6} alt="" className="facilities-card-image" />
-        <div className="facilities-card-title">School Facility</div>
-        <div className="facilities-card-text">
-          Priority Highlands, the beautiful 30-acre campus, situated in Chanthar
-          Village in Brahmavar, Udupi District is the home of LRIS. This campus
-          is popularly known as “LITTLE ROCK”, and is 4 kms east of Brahmavar
-          Bus Station on the Brahmavar-Hebri Road. Brahmavar is on National
-          Highway No. 66, about 72 kms north of Mangalore. The nearest Airport
-          is at Mangalore. The nearest Railway Station is in Udupi, about 20 kms
-          from the Campus. Brahmavar lies between Udupi in the south and
-          Kundapura in the north, on NH 66.
+        <img src={schoolImage2} alt="" className="facilities-card-image" />
+        <div className="facilities-card-title">
+          Kindergarten Play & Activity Area
         </div>
-        <button className="facilities-button">Read more</button>
+        <div className="facilities-card-text">
+          The Kindergarten Play Area at Educare EM School is specially designed
+          to support the early development of young children through play,
+          creativity, and interaction. This vibrant space includes safe play
+          equipment, colorful activity corners, and engaging surroundings that
+          stimulate imagination and motor skills. Children can explore,
+          socialize, and learn through fun activities in a secure and nurturing
+          environment. At Educare EM School, led by K. Murarji, we believe that
+          play is an essential part of early childhood education, helping
+          children grow happily while building confidence and curiosity about
+          the world around them.
+        </div>
+        {/* <button className="facilities-button">Read more</button> */}
       </div>
     </div>
   );

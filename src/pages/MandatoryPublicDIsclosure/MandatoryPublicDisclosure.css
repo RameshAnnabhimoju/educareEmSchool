@@ -12,3 +12,6 @@
   width: 600px;
   height: 750px;
 }
+.mpd-item-container {
+  margin-block-end: 100px;
+}

@@ -47,6 +47,8 @@ import edu2 from "./edu2.jpg";
 import edu3 from "./wdu3.jpg";
 import edu4 from "./edu4.jpg";
 import eduPrincipal from "./eduprincipal.jpg";
+import selfCertificate from "./self_certificate.pdf";
+import landCertificate from "./land_certificate.pdf";
 export {
   class1,
   class2,
@@ -97,4 +99,6 @@ export {
   edu3,
   edu4,
   eduPrincipal,
+  selfCertificate,
+  landCertificate,
 };
