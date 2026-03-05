@@ -1,4 +1,4 @@
-import { storageKeys } from "../configs/appConfiguration";
+import { storageKeys } from "../configs/AppConfiguration";
 
 export const storageService = {
   getItem: (key: string) => {
