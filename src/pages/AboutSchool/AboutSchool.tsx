@@ -44,8 +44,9 @@ function AboutSchool() {
         <div className="about-school-text-content">
           <p>
             <strong>Campus, its Location:</strong>
-            The beautidul campus,situated in Tatipaka Village in Razole ,Dr.
-            B.R. Ambedkar Konaseema District is the home of Educare EM School.
+            The beautiful campus, settled in Geddada Village in MAMIDIKUDURU
+            mandal, Dr BR Ambedkar Konaseema Dist is the home of Educare EM
+            School.
           </p>
           <p>
             Our school is a place where students can learn and grow in a safe

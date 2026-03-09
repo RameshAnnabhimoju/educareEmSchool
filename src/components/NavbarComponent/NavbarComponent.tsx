@@ -68,6 +68,15 @@ function NavbarComponent() {
                 <Link to="/fee-structure">
                   <div className="dropdown-item">Fee Structure</div>
                 </Link>
+                <Link to="/strength-details">
+                  <div className="dropdown-item">Strength Details</div>
+                </Link>
+                <Link to="/staff-details">
+                  <div className="dropdown-item">Staff Details</div>
+                </Link>
+                <Link to="/infrastructure">
+                  <div className="dropdown-item">Infrastructure</div>
+                </Link>
                 <Link to="/sanitary-certification">
                   <div className="dropdown-item">Sanitary Certificate</div>
                 </Link>
@@ -75,7 +84,9 @@ function NavbarComponent() {
                   <div className="dropdown-item">Fire Safety</div>
                 </Link>
                 <Link to="/drinking-water">
-                  <div className="dropdown-item">Drinking Water</div>
+                  <div className="dropdown-item">
+                    Drinking Water And Water Testing Certificate
+                  </div>
                 </Link>
                 <Link to="/building-safety-certificate">
                   <div className="dropdown-item">
@@ -83,17 +94,17 @@ function NavbarComponent() {
                   </div>
                 </Link>
                 <Link to="/global-recognition">
-                  <div className="dropdown-item">Global Recognition</div>
+                  <div className="dropdown-item">Recognition Certificate</div>
                 </Link>
-                <Link to="/noc">
+                {/* <Link to="/noc">
                   <div className="dropdown-item">NOC</div>
-                </Link>
+                </Link> */}
                 <Link to="/affidavit">
                   <div className="dropdown-item">Affidavit</div>
                 </Link>
-                <Link to="/water-sample-test">
+                {/* <Link to="/water-sample-test">
                   <div className="dropdown-item">Water Sample Test</div>
-                </Link>
+                </Link> */}
                 <Link to="/self-certificate">
                   <div className="dropdown-item">Self Certificate</div>
                 </Link>

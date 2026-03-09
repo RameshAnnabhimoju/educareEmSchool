@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import societyCertificate from "../../assets/school registration.pdf";
-import smc from "../../assets/management-commitee.pdf";
+import smc from "../../assets/SMC.pdf";
 import pta from "../../assets/pta.pdf";
 import cal1 from "../../assets/1st to 5th calender.pdf";
 import cal2 from "../../assets/6th to 8th calender.pdf";
@@ -9,12 +9,15 @@ import "./MandatoryPublicDisclosure.css";
 import noc from "../../assets/noc.pdf";
 import waterSaftey from "../../assets/water-testing.jpg";
 import buildingSaftey from "../../assets/building-safety.jpg";
-import feeStructure from "../../assets/strength.pdf";
+import feeStructure from "../../assets/Fee_Details.pdf";
 import sanitaryCertificate from "../../assets/sanitary.pdf";
 import globalRecognition from "../../assets/Global Recognition.pdf";
 import affidavit from "../../assets/affidavit.pdf";
 import landCertificate from "../../assets/land_certificate.pdf";
 import selfCertificate from "../../assets/self_certificate.pdf";
+import strengthDetails from "../../assets/Strength_Details.pdf";
+import staffDetails from "../../assets/Staff_Details.pdf";
+import infrastructure from "../../assets/Infrastructure_Details.pdf";
 const MandatoryPublicDisclosure = () => {
   const path = useLocation();
   return (
@@ -91,7 +94,10 @@ const MandatoryPublicDisclosure = () => {
       )}
       {path.pathname == "/drinking-water" && (
         <div className="mpd-item-container">
-          <h1 className="mpd-heading">Drinking Water</h1>
+          <h1 className="mpd-heading">
+            {" "}
+            Drinking Water And Water Testing Certificate
+          </h1>
           <img src={waterSaftey} alt="Water Safety" className="mpd-image" />
         </div>
       )}
@@ -103,7 +109,7 @@ const MandatoryPublicDisclosure = () => {
       )}
       {path.pathname == "/global-recognition" && (
         <div className="mpd-item-container">
-          <h1 className="mpd-heading">Global Recognition</h1>
+          <h1 className="mpd-heading">Recognition Certificaate</h1>
           <object
             className="pdf"
             data={globalRecognition}
@@ -152,6 +158,50 @@ const MandatoryPublicDisclosure = () => {
           <object
             className="pdf"
             data={selfCertificate}
+            width="800"
+            height="950"
+          ></object>
+        </div>
+      )}
+      {path.pathname == "/affidavit" && (
+        <div className="mpd-item-container">
+          <h1 className="mpd-heading">Affidavit</h1>
+          <object
+            className="pdf"
+            data={affidavit}
+            width="800"
+            height="950"
+          ></object>
+        </div>
+      )}
+      {path.pathname == "/strength-details" && (
+        <div className="mpd-item-container">
+          <h1 className="mpd-heading">Strength Details</h1>
+          <object
+            className="pdf"
+            data={strengthDetails}
+            width="800"
+            height="950"
+          ></object>
+        </div>
+      )}
+      {path.pathname == "/staff-details" && (
+        <div className="mpd-item-container">
+          <h1 className="mpd-heading">Staff Details</h1>
+          <object
+            className="pdf"
+            data={staffDetails}
+            width="800"
+            height="950"
+          ></object>
+        </div>
+      )}
+      {path.pathname == "/infrastructure" && (
+        <div className="mpd-item-container">
+          <h1 className="mpd-heading">Infrastructure</h1>
+          <object
+            className="pdf"
+            data={infrastructure}
             width="800"
             height="950"
           ></object>
