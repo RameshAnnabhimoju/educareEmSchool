@@ -53,6 +53,11 @@ function NavbarComponent() {
                 title={<About />}
                 className="navbar-item-data"
               >
+                <Link to="/mandatory-public-disclosure">
+                  <div className="dropdown-item">
+                    Mandatory Public Disclosures
+                  </div>
+                </Link>
                 <Link to="/society-certificate">
                   <div className="dropdown-item">Society Certificate</div>
                 </Link>

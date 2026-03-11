@@ -18,10 +18,22 @@ import selfCertificate from "../../assets/self_certificate.pdf";
 import strengthDetails from "../../assets/Strength_Details.pdf";
 import staffDetails from "../../assets/Staff_Details.pdf";
 import infrastructure from "../../assets/Infrastructure_Details.pdf";
+import mandatoryPublicDisclosure from "../../assets/mandatory public disclosures.pdf";
 const MandatoryPublicDisclosure = () => {
   const path = useLocation();
   return (
     <div>
+      {path.pathname == "/mandatory-public-disclosure" && (
+        <div className="mpd-item-container">
+          <h1 className="mpd-heading">Mandatory Public Disclosures</h1>
+          <object
+            className="pdf"
+            data={mandatoryPublicDisclosure}
+            width="800"
+            height="950"
+          ></object>
+        </div>
+      )}
       {path.pathname == "/society-certificate" && (
         <div className="mpd-item-container">
           <h1 className="mpd-heading">Society Certificate</h1>

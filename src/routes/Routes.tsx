@@ -61,6 +61,10 @@ const AppRoutes = () => {
       <Route path="/staff-details" element={<MandatoryPublicDisclosure />} />
       <Route path="/infrastructure" element={<MandatoryPublicDisclosure />} />
       <Route
+        path="/mandatory-public-disclosure"
+        element={<MandatoryPublicDisclosure />}
+      />
+      <Route
         path="/academic-calendar"
         element={<MandatoryPublicDisclosure />}
       />
