@@ -16,7 +16,8 @@ import affidavit from "../../assets/affidavit.pdf";
 import landCertificate from "../../assets/land_certificate.pdf";
 import selfCertificate from "../../assets/self_certificate.pdf";
 import strengthDetails from "../../assets/Strength_Details.pdf";
-import staffDetails from "../../assets/Staff_Details.pdf";
+// import staffDetails from "../../assets/Staff_Details.pdf";
+import staffDetails from "../../assets/staff_.pdf";
 import infrastructure from "../../assets/Infrastructure_Details.pdf";
 import mandatoryPublicDisclosure from "../../assets/mandatory public disclosures.pdf";
 const MandatoryPublicDisclosure = () => {
