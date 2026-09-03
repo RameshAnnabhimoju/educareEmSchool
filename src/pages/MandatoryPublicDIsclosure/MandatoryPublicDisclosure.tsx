@@ -2,23 +2,25 @@ import { useLocation } from "react-router-dom";
 import societyCertificate from "../../assets/school registration.pdf";
 import smc from "../../assets/SMC.pdf";
 import pta from "../../assets/pta.pdf";
-import cal1 from "../../assets/1st to 5th calender.pdf";
-import cal2 from "../../assets/6th to 8th calender.pdf";
+import cal1 from "../../assets/Acdemic-calender-2026-2027.pdf";
+// import cal2 from "../../assets/6th to 8th calender.pdf";
 import "./MandatoryPublicDisclosure.css";
 // import ComingSoon from "../ComingSoon/ComingSoon";
-import noc from "../../assets/noc.pdf";
-import waterSaftey from "../../assets/water-testing.jpg";
-import buildingSaftey from "../../assets/building-safety.jpg";
-import feeStructure from "../../assets/Fee_Details.pdf";
-import sanitaryCertificate from "../../assets/sanitary.pdf";
+import noc from "../../assets/fire-challan-and-fire-NOC-2025-26.pdf";
+import waterSaftey from "../../assets/water-testing.pdf";
+import buildingSaftey from "../../assets/building-safety-certificate.pdf";
+import feeStructure from "../../assets/Fee-Structure-2026-27.pdf";
+import sanitaryCertificate from "../../assets/Sanitation-document.pdf";
 import globalRecognition from "../../assets/Global Recognition.pdf";
 import affidavit from "../../assets/affidavit.pdf";
 import landCertificate from "../../assets/land_certificate.pdf";
 import selfCertificate from "../../assets/self_certificate.pdf";
-import strengthDetails from "../../assets/Strength_Details.pdf";
+import strengthDetails from "../../assets/strength-details.pdf";
 // import staffDetails from "../../assets/Staff_Details.pdf";
-import staffDetails from "../../assets/staff_.pdf";
-import infrastructure from "../../assets/Infrastructure_Details.pdf";
+import teachingStaffDetails from "../../assets/staff-details.pdf";
+import nonTeachingStaffDetails from "../../assets/Non-Teaching-staff.pdf";
+import infrastructure from "../../assets/Infrastructure.pdf";
+import cbseAffiliation from "../../assets/Educare-EM-School-CBSE-Affliation.pdf";
 import mandatoryPublicDisclosure from "../../assets/mandatory public disclosures.pdf";
 const MandatoryPublicDisclosure = () => {
   const path = useLocation();
@@ -68,12 +70,12 @@ const MandatoryPublicDisclosure = () => {
               width="800"
               height="950"
             ></object>
-            <object
+            {/* <object
               className="pdf"
               data={cal2}
               width="800"
               height="950"
-            ></object>
+            ></object> */}
           </div>
         </div>
       )}
@@ -111,13 +113,25 @@ const MandatoryPublicDisclosure = () => {
             {" "}
             Drinking Water And Water Testing Certificate
           </h1>
-          <img src={waterSaftey} alt="Water Safety" className="mpd-image" />
+          {/* <img src={waterSaftey} alt="Water Safety" className="mpd-image" /> */}
+          <object
+            className="pdf"
+            data={waterSaftey}
+            width="800"
+            height="950"
+          ></object>
         </div>
       )}
       {path.pathname == "/building-safety-certificate" && (
         <div className="mpd-item-container">
           <h1 className="mpd-heading">Building Safety Certificate</h1>
-          <img src={buildingSaftey} alt="Water Safety" className="mpd-image" />
+          {/* <img src={buildingSaftey} alt="Water Safety" className="mpd-image" /> */}
+          <object
+            className="pdf"
+            data={buildingSaftey}
+            width="800"
+            height="950"
+          ></object>
         </div>
       )}
       {path.pathname == "/global-recognition" && (
@@ -148,12 +162,12 @@ const MandatoryPublicDisclosure = () => {
           ></object>
         </div>
       )}
-      {path.pathname == "/water-sample-test" && (
+      {/* {path.pathname == "/water-sample-test" && (
         <div className="mpd-item-container">
           <h1 className="mpd-heading">Water Sample Test</h1>
           <img src={waterSaftey} alt="Water Safety" className="mpd-image" />
         </div>
-      )}
+      )} */}
       {path.pathname == "/land-certificate" && (
         <div className="mpd-item-container">
           <h1 className="mpd-heading">Land Certificate</h1>
@@ -201,12 +215,20 @@ const MandatoryPublicDisclosure = () => {
       {path.pathname == "/staff-details" && (
         <div className="mpd-item-container">
           <h1 className="mpd-heading">Staff Details</h1>
-          <object
-            className="pdf"
-            data={staffDetails}
-            width="800"
-            height="950"
-          ></object>
+          <div style={{ display: "flex", gap: "20px" }}>
+            <object
+              className="pdf"
+              data={teachingStaffDetails}
+              width="800"
+              height="950"
+            ></object>
+            <object
+              className="pdf"
+              data={nonTeachingStaffDetails}
+              width="800"
+              height="950"
+            ></object>
+          </div>
         </div>
       )}
       {path.pathname == "/infrastructure" && (
@@ -215,6 +237,17 @@ const MandatoryPublicDisclosure = () => {
           <object
             className="pdf"
             data={infrastructure}
+            width="800"
+            height="950"
+          ></object>
+        </div>
+      )}
+      {path.pathname == "/cbse-affiliation" && (
+        <div className="mpd-item-container">
+          <h1 className="mpd-heading">CBSE Affiliation</h1>
+          <object
+            className="pdf"
+            data={cbseAffiliation}
             width="800"
             height="950"
           ></object>

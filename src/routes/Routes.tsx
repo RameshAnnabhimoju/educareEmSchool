@@ -91,6 +91,7 @@ const AppRoutes = () => {
       />
       <Route path="/land-certificate" element={<MandatoryPublicDisclosure />} />
       <Route path="/self-certificate" element={<MandatoryPublicDisclosure />} />
+      <Route path="/cbse-affiliation" element={<MandatoryPublicDisclosure />} />
     </Routes>
   );
 };

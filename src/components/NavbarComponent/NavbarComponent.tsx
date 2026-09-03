@@ -58,6 +58,9 @@ function NavbarComponent() {
                     Mandatory Public Disclosures
                   </div>
                 </Link>
+                <Link to="/cbse-affiliation">
+                  <div className="dropdown-item">CBSE Affiliation</div>
+                </Link>
                 <Link to="/society-certificate">
                   <div className="dropdown-item">Society Certificate</div>
                 </Link>
