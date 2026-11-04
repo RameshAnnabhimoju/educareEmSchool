@@ -6,7 +6,7 @@ import cal1 from "../../assets/Acdemic-calender-2026-2027.pdf";
 // import cal2 from "../../assets/6th to 8th calender.pdf";
 import "./MandatoryPublicDisclosure.css";
 // import ComingSoon from "../ComingSoon/ComingSoon";
-import noc from "../../assets/fire-challan-and-fire-NOC-2025-26.pdf";
+import noc from "../../assets/Global-School-Fire-Noc-2026.pdf";
 import waterSaftey from "../../assets/water-testing.pdf";
 import buildingSaftey from "../../assets/building-safety-certificate.pdf";
 import feeStructure from "../../assets/Fee-Structure-2026-27.pdf";
