@@ -12,6 +12,35 @@ function NavbarComponent() {
       <span className="navbar-item-span-data">Mandatory Public Disclosure</span>
     );
   };
+  const disclosureLinks = [
+    {
+      to: "/mandatory-public-disclosure",
+      label: "Mandatory Public Disclosures",
+    },
+    { to: "/cbse-affiliation", label: "CBSE Affiliation" },
+    { to: "/society-certificate", label: "Society Certificate" },
+    { to: "/smc", label: "SMC" },
+    { to: "/pta", label: "PTA" },
+    { to: "/academic-calendar", label: "Academic Calendar" },
+    { to: "/fee-structure", label: "Fee Structure" },
+    { to: "/strength-details", label: "Strength Details" },
+    { to: "/staff-details", label: "Staff Details" },
+    { to: "/infrastructure", label: "Infrastructure" },
+    { to: "/sanitary-certification", label: "Sanitary Certificate" },
+    { to: "/fire-safety", label: "Fire Safety" },
+    {
+      to: "/drinking-water",
+      label: "Drinking Water And Water Testing Certificate",
+    },
+    {
+      to: "/building-safety-certificate",
+      label: "Building Safety Certificate",
+    },
+    { to: "/global-recognition", label: "Recognition Certificate" },
+    { to: "/affidavit", label: "Affidavit" },
+    { to: "/self-certificate", label: "Self Certificate" },
+    { to: "/land-certificate", label: "Land Certificate" },
+  ];
   // const Facilities = () => {
   //   return <span className="navbar-item-span-data">Facilites</span>;
   // };
@@ -35,131 +64,70 @@ function NavbarComponent() {
             className="justify-content-center"
           >
             <Nav className="fw-bold" id="navitems-container">
-              <Link to="/" className="navbar-item-data">
-                <div className="navbar-item-data">Home</div>
-              </Link>
-              <Link to="/aboutSchool" className="navbar-item-data">
-                <div className="navbar-item-data">About</div>
-              </Link>
-              <Link to="/infrastructureFacility" className="navbar-item-data">
-                <div className="navbar-item-data">Facilities</div>
-              </Link>
-              <Link to="/comingSoon" className="navbar-item-data">
-                <div className="navbar-item-data">Teaching & Learning </div>
-              </Link>
+              <Nav.Link
+                as={Link}
+                to="/"
+                eventKey="/"
+                className="navbar-item-data"
+              >
+                Home
+              </Nav.Link>
+              <Nav.Link
+                as={Link}
+                to="/aboutSchool"
+                eventKey="/aboutSchool"
+                className="navbar-item-data"
+              >
+                About
+              </Nav.Link>
+              <Nav.Link
+                as={Link}
+                to="/infrastructureFacility"
+                eventKey="/infrastructureFacility"
+                className="navbar-item-data"
+              >
+                Facilities
+              </Nav.Link>
+              <Nav.Link
+                as={Link}
+                to="/comingSoon"
+                eventKey="/comingSoon"
+                className="navbar-item-data"
+              >
+                Teaching &amp; Learning
+              </Nav.Link>
               <hr />
+
               <NavDropdown
-                align={"end"}
+                align="end"
                 title={<About />}
                 className="navbar-item-data"
               >
-                <Link to="/mandatory-public-disclosure">
-                  <div className="dropdown-item">
-                    Mandatory Public Disclosures
-                  </div>
-                </Link>
-                <Link to="/cbse-affiliation">
-                  <div className="dropdown-item">CBSE Affiliation</div>
-                </Link>
-                <Link to="/society-certificate">
-                  <div className="dropdown-item">Society Certificate</div>
-                </Link>
-                <Link to="/smc">
-                  <div className="dropdown-item">SMC</div>
-                </Link>
-                <Link to="/pta">
-                  <div className="dropdown-item">PTA</div>
-                </Link>
-                <Link to="/academic-calendar">
-                  <div className="dropdown-item">Academic Calendar</div>
-                </Link>
-                <Link to="/fee-structure">
-                  <div className="dropdown-item">Fee Structure</div>
-                </Link>
-                <Link to="/strength-details">
-                  <div className="dropdown-item">Strength Details</div>
-                </Link>
-                <Link to="/staff-details">
-                  <div className="dropdown-item">Staff Details</div>
-                </Link>
-                <Link to="/infrastructure">
-                  <div className="dropdown-item">Infrastructure</div>
-                </Link>
-                <Link to="/sanitary-certification">
-                  <div className="dropdown-item">Sanitary Certificate</div>
-                </Link>
-                <Link to="/fire-safety">
-                  <div className="dropdown-item">Fire Safety</div>
-                </Link>
-                <Link to="/drinking-water">
-                  <div className="dropdown-item">
-                    Drinking Water And Water Testing Certificate
-                  </div>
-                </Link>
-                <Link to="/building-safety-certificate">
-                  <div className="dropdown-item">
-                    Building Safety Certificate
-                  </div>
-                </Link>
-                <Link to="/global-recognition">
-                  <div className="dropdown-item">Recognition Certificate</div>
-                </Link>
-                {/* <Link to="/noc">
-                  <div className="dropdown-item">NOC</div>
-                </Link> */}
-                <Link to="/affidavit">
-                  <div className="dropdown-item">Affidavit</div>
-                </Link>
-                {/* <Link to="/water-sample-test">
-                  <div className="dropdown-item">Water Sample Test</div>
-                </Link> */}
-                <Link to="/self-certificate">
-                  <div className="dropdown-item">Self Certificate</div>
-                </Link>
-                <Link to="/land-certificate">
-                  <div className="dropdown-item">Land Certificate</div>
-                </Link>
+                {disclosureLinks.map(({ to, label }) => (
+                  <NavDropdown.Item key={to} as={Link} to={to} eventKey={to}>
+                    {label}
+                  </NavDropdown.Item>
+                ))}
               </NavDropdown>
               <hr />
-              {/*
-            <NavDropdown title={<Facilities />} className="navbar-item-data">
-              <Link href="/infrastructureFacility">
-                <div className="dropdown-item">Infrastructure</div>
-              </Link>
-              <Link href="/transportation">
-                <div className="dropdown-item">Transportation</div>
-              </Link>
-            </NavDropdown>
-            <hr />
-            <NavDropdown title={<Admissions />} className="navbar-item-data">
-              <Link href="/admissionProcess">
-                <div className="dropdown-item">Admission Process</div>
-              </Link>
-              <Link href="/feeStructure">
-                <div className="dropdown-item">Fee Structure</div>
-              </Link>
-              <Link href="/transferAdmission">
-                <div className="dropdown-item">Transfer Admission</div>
-              </Link>
-            </NavDropdown>
-            <hr />
-            <NavDropdown title={<Circulars />}className="navbar-item-data">
-              <Link href="/upComingEvents">
-                <div className="dropdown-item">Upcoming Events</div>
-              </Link>
-              <Link href="/concludedEvents">
-                <div className="dropdown-item">Concluded Events</div>
-              </Link>
-            </NavDropdown> */}
-              <hr />
-              <Nav.Link href="/contactUS" className="navbar-item-data">
-                <div className="navbar-item-data">Contact Us</div>
+
+              <Nav.Link
+                as={Link}
+                to="/contactUS"
+                eventKey="/contactUS"
+                className="navbar-item-data"
+              >
+                Contact Us
               </Nav.Link>
               <hr />
-              <Nav.Link href="/login" className="navbar-item-data">
-                <div className="navbar-item-data">Login</div>
+              <Nav.Link
+                as={Link}
+                to="/login"
+                eventKey="/login"
+                className="navbar-item-data"
+              >
+                Login
               </Nav.Link>
-              <hr />
             </Nav>
           </Navbar.Collapse>
         </Container>
